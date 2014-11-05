@@ -11,7 +11,7 @@ module.exports = {
             },
             {
                 type: 'rotating-file',
-                path: './log/pegasus-as.log',
+                path: './public/log/pegasus-as.log',
                 period: '1d',
                 count: 7
             }]
