@@ -36,8 +36,7 @@ UserSchema.path('username').validate(function(username) {
  * Statics
  */
 UserSchema.statics.load = function(id, cb) {
-    this.findOne({ _id: id })
-    .exec(cb);
+    this.findOne({ _id: id }).exec(cb);
 };
 
 mongoose.model('User', UserSchema);

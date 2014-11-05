@@ -4,6 +4,10 @@
 module.exports = function usersRoutes(app) {
     var users = require('../controllers/users');
 
-    // Finish with setting up the articleId param
-    //app.param('userId', users.load);
+    app.put('/users', users.create);                    // *** create user
+    app.get('/users/:userId', users.getUser);           // *** get user info
+    
+    
+    // Finish with setting up the user param
+    app.param('userId', users.load);
 };
