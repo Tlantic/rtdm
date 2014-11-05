@@ -5,7 +5,10 @@ module.exports = function usersRoutes(app) {
     var tasks = require('../controllers/tasks');
 
     app.put('/tasks', tasks.create);                    
+    app.post('/tasks/:taskId', tasks.update);
     app.get('/tasks/:taskId', tasks.getTask);
+    
+    
     app.get('/tasksByOwner/:ownerId', tasks.getTaskByOwner);
     
     

@@ -17,13 +17,18 @@ var TaskSchema = new Schema({
         ref: 'User'
     },    
     description: String,
-    createdAt: Date,
+    createdAt:  { type: Date, default: Date.now },
     startedAt: Date,
     finishedAt: Date,
     address: String,
     coords: {
         lat: String,
         lon: String
+    },
+    lastUpdate: {
+        timestamp: Date,
+        lat: String,
+        lon: String,
     }
 });
 

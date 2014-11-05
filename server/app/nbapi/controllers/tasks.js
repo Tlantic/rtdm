@@ -63,3 +63,21 @@ exports.create = function (req, res) {
         return res.json(result);
     });
 };
+
+/**
+ *
+ */
+exports.update = function (req, res) {
+    var task = req.loadedTask;
+    
+    task = _.extend(task, req.body);
+    task = _.extend(task, {
+        lastUpdate: {
+            timestamp: Date.now(),
+        }
+    });
+    
+    task.save(function (err) {
+        res.json( mBuilder.buildQuickResponse(err, 'Unexpected error updating task.', task) );
+    });
+};
