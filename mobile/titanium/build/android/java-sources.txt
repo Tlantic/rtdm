@@ -1,0 +1,8 @@
+"D:/gh/rtdm/mobile/titanium/build/android/gen/android/support/v7/appcompat/R.java"
+"D:/gh/rtdm/mobile/titanium/build/android/gen/com/tlantic/rtdm/ApplicationStylesheet.java"
+"D:/gh/rtdm/mobile/titanium/build/android/gen/com/tlantic/rtdm/AssetCryptImpl.java"
+"D:/gh/rtdm/mobile/titanium/build/android/gen/com/tlantic/rtdm/R.java"
+"D:/gh/rtdm/mobile/titanium/build/android/gen/com/tlantic/rtdm/RtdmActivity.java"
+"D:/gh/rtdm/mobile/titanium/build/android/gen/com/tlantic/rtdm/RtdmAppInfo.java"
+"D:/gh/rtdm/mobile/titanium/build/android/gen/com/tlantic/rtdm/RtdmApplication.java"
+"D:/gh/rtdm/mobile/titanium/build/android/gen/ti/modules/titanium/ui/R.java"
