@@ -12,9 +12,9 @@ exports.load = function (req, res, next, id) {
 
     if (req.method === 'PUT') {
         next();
-        
+
     } else {
-        
+
         User.load(id, function (err, user) {
 
             if (err || !user) {
@@ -44,5 +44,12 @@ exports.create = function (req, res) {
     user.save( function saveUser(err, inserted) {
         result = mBuilder.buildQuickResponse(err);
         return res.json(result);
+    });
+};
+
+
+exports.listAll = function (req, res) {
+    User.find({}, function(err, users) {
+        return res.json( mBuilder.buildQuickResponse(err, 'Error listing users!', users) );
     });
 };

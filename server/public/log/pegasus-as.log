@@ -586,3 +586,11 @@
 {"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T18:53:31.300Z","v":0}
 {"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T18:53:31.300Z","v":0}
 {"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T18:53:31.300Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T19:08:34.603Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T19:08:34.603Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T19:08:35.587Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T19:08:35.712Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T19:08:35.743Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T19:08:35.743Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T19:08:35.743Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T19:08:35.743Z","v":0}

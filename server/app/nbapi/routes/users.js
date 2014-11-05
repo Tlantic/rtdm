@@ -7,6 +7,7 @@ module.exports = function usersRoutes(app) {
     app.put('/users', users.create);                    // *** create user
     app.get('/users/:userId', users.getUser);           // *** get user info
     
+    app.get('/users/list/all', users.listAll);           // *** get user info
     
     // Finish with setting up the user param
     app.param('userId', users.load);
