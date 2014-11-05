@@ -10,7 +10,7 @@ global.config  = require('./config/all.js');
 
 // ***** Starting Server Modules *****
 
-// TODO: configure logstash
+// logger block
 var logger = require('./app/utils/plogger.js').getLogger(global.config.logging);
 logger.info('Starting server blocks...');
 
@@ -18,8 +18,13 @@ logger.info('Starting server blocks...');
 var core = require('./app/core.js')(global.config.core, logger);
 core.init();
 
-// TODO: elastic system
-// TODO: couchdb connection
+// mongo database connection + model loading
+var mongoose = require('mongoose'),
+    db = mongoose.connect(global.config.db),
+    lHelper = require('./app/utils/loadHelper.js');
+
+lHelper.walk(global.config.root + '/app/models');
+
 
 
 // routing block
@@ -30,7 +35,8 @@ router.init(require('./config/express.js'));
 router.loadAPI('/app/nbapi/routes');
 
 
-// TODO: bypass api
+// publishing studio
+router.app.use('/studio', require('express').static(__dirname + "/public"));
 
 
 // ***** Start the app by listening on <port> *****

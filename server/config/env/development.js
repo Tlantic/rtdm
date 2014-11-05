@@ -2,6 +2,7 @@
 'use strict';
 module.exports = {
     debug: true,
+    db: "mongodb://tlantic:panvel@ds051630.mongolab.com:51630/rtdm",
     logging: {
         name: 'application_server',
         streams: [
