@@ -8,21 +8,28 @@ function AuthWindow() {
 		exitOnClose : true,
 		navBarHidden : false,
 		layout : 'vertical',
-		backgroundColor : '#123456'
+		backgroundColor : '#362372'
 	});
 
-	var label = Ti.UI.createLabel({
-		text : 'Login',
-		color : '#fff',
-		top : 10,
-		textAlign : 'center',
-		font : {
-			fontWeight : 'bold',
-			fontSize : 18
-		},
-		height : 'auto'
+	/*
+	 var label = Ti.UI.createLabel({
+	 text : 'Panvel',
+	 color : '#fff',
+	 top : 10,
+	 textAlign : 'center',
+	 font : {
+	 fontWeight : 'bold',
+	 fontSize : 18
+	 },
+	 height : 'auto'
+	 });
+	 self.add(label);
+	 */
+	
+	var logo = Ti.UI.createImageView({
+		image : Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,'logo.jpg')
 	});
-	self.add(label);
+	self.add(logo);
 
 	var textfield = Ti.UI.createTextField({
 		height : 40,
@@ -47,11 +54,9 @@ function AuthWindow() {
 		Ti.API.info('User clicked the button ');
 
 		// Alert
-		var msgTitle = "Alert title";
-		var msgText = "You clicked the button!";
 		var alertBox = Ti.UI.createAlertDialog({
-			title : msgTitle,
-			message : msgText
+			title : "Alert title",
+			message : "You clicked the button!"
 		});
 		alertBox.show();
 

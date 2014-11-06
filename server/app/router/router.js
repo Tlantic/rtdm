@@ -53,7 +53,7 @@ PegasusRouter.prototype.start = function () {
             this.logger.debug('- HTTP Server Config: ', this.config.http);
 
             this.httpServer = http.createServer(this.app);
-            this.httpServer.listen(this.config.http.port);
+            this.httpServer.listen(process.env.PORT || this.config.http.port);
 
             this.logger.info('Pegasus HTTP Server listening on port ', this.config.http.port);
         } else {

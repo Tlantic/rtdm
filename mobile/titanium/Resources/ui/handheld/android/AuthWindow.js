@@ -8,21 +8,13 @@ function AuthWindow() {
 		exitOnClose : true,
 		navBarHidden : false,
 		layout : 'vertical',
-		backgroundColor : '#123456'
+		backgroundColor : '#362372'
 	});
 
-	var label = Ti.UI.createLabel({
-		text : 'Login',
-		color : '#fff',
-		top : 10,
-		textAlign : 'center',
-		font : {
-			fontWeight : 'bold',
-			fontSize : 18
-		},
-		height : 'auto'
+	var logo = Ti.UI.createImageView({
+		image : Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,'logo.jpg')
 	});
-	self.add(label);
+	self.add(logo);
 
 	var textfield = Ti.UI.createTextField({
 		height : 40,
@@ -48,7 +40,7 @@ function AuthWindow() {
 
 		// Alert
 		var alertBox = Ti.UI.createAlertDialog({
-			title 	: "Alert title",
+			title : "Alert title",
 			message : "You clicked the button!"
 		});
 		alertBox.show();
