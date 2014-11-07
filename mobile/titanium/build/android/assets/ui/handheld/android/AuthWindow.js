@@ -1,6 +1,7 @@
 function AuthWindow() {
 	//declare module dependencies
 	var MasterView = require('ApplicationWindow');
+	var helper = require('ui/common/Helper');
 
 	//create object instance
 	var self = Ti.UI.createWindow({
@@ -11,23 +12,8 @@ function AuthWindow() {
 		backgroundColor : '#362372'
 	});
 
-	/*
-	 var label = Ti.UI.createLabel({
-	 text : 'Panvel',
-	 color : '#fff',
-	 top : 10,
-	 textAlign : 'center',
-	 font : {
-	 fontWeight : 'bold',
-	 fontSize : 18
-	 },
-	 height : 'auto'
-	 });
-	 self.add(label);
-	 */
-	
 	var logo = Ti.UI.createImageView({
-		image : Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,'logo.jpg')
+		image : Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'logo.jpg')
 	});
 	self.add(logo);
 
@@ -49,17 +35,9 @@ function AuthWindow() {
 		width : 200
 	});
 
+	// entrar
 	button.addEventListener('click', function() {
-		// Check console
-		Ti.API.info('User clicked the button ');
-
-		// Alert
-		var alertBox = Ti.UI.createAlertDialog({
-			title : "Alert title",
-			message : "You clicked the button!"
-		});
-		alertBox.show();
-
+		helper.showMsg('teste');
 	});
 	self.add(button);
 
@@ -67,4 +45,4 @@ function AuthWindow() {
 	return self;
 };
 
-module.exports = AuthWindow;
+module.exports = AuthWindow; 
