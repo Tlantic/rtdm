@@ -1,1 +1,401 @@
-This is backoffice
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="ie9 gt-ie8"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="gt-ie8 gt-ie9 not-ie"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>RTDM - Realtime Delivery Management PoC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<!-- Open Sans font from Google CDN -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin" rel="stylesheet" type="text/css">
+
+	<!-- Pixel Admin's stylesheets -->
+	<link href="assets/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/stylesheets/pixel-admin.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/stylesheets/widgets.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/stylesheets/rtl.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/stylesheets/themes.min.css" rel="stylesheet" type="text/css">
+
+	<!--[if lt IE 9]>
+		<script src="assets/javascripts/ie.min.js"></script>
+	<![endif]-->
+</head>
+
+
+<!-- 1. $BODY ======================================================================================
+
+	Body
+
+	Classes:
+	* 'theme-{THEME NAME}'
+	* 'right-to-left'      - Sets text direction to right-to-left
+	* 'main-menu-right'    - Places the main menu on the right side
+	* 'no-main-menu'       - Hides the main menu
+	* 'main-navbar-fixed'  - Fixes the main navigation
+	* 'main-menu-fixed'    - Fixes the main menu
+	* 'main-menu-animated' - Animate main menu
+-->
+<body class="theme-default main-menu-animated no-main-menu">
+
+<script>var init = [];</script>
+
+<div id="main-wrapper">
+
+<!-- 2. $MAIN_NAVIGATION =========================================================================== -->
+	<div id="main-navbar" class="navbar navbar-inverse" role="navigation">
+		<!-- Main menu toggle -->
+		<button type="button" id="main-menu-toggle"><i class="navbar-icon fa fa-bars icon"></i><span class="hide-menu-text">HIDE MENU</span></button>
+
+		<div class="navbar-inner">
+			<!-- Main navbar header -->
+			<div class="navbar-header">
+
+				<!-- Logo -->
+				<a href="index.html" class="navbar-brand">
+					<div><img alt="Tlantic Realtime Delivery Management" src="assets/images/pixel-admin/main-navbar-logo.png"></div>
+					Tlantic RTDM
+				</a>
+
+				<!-- Main navbar toggle -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse"><i class="navbar-icon fa fa-bars"></i></button>
+
+			</div> <!-- / .navbar-header -->
+
+			<div id="main-navbar-collapse" class="collapse navbar-collapse main-navbar-collapse">
+				<div>
+					<div class="right clearfix">
+						<ul class="nav navbar-nav pull-right right-navbar-nav">
+
+<!-- 3. $NAVBAR_ICON_BUTTONS =======================================================================
+
+							Navbar Icon Buttons
+
+							NOTE: .nav-icon-btn triggers a dropdown menu on desktop screens only. On small screens .nav-icon-btn acts like a hyperlink.
+
+							Classes:
+							* 'nav-icon-btn-info'
+							* 'nav-icon-btn-success'
+							* 'nav-icon-btn-warning'
+							* 'nav-icon-btn-danger'
+-->
+							<li class="nav-icon-btn nav-icon-btn-danger dropdown">
+								<a href="#notifications" class="dropdown-toggle" data-toggle="dropdown">
+									<span class="label">5</span>
+									<i class="nav-icon fa fa-bullhorn"></i>
+									<span class="small-screen-text">Notificações</span>
+								</a>
+
+								<!-- NOTIFICATIONS -->
+
+								<!-- Javascript -->
+								<script>
+									init.push(function () {
+										$('#main-navbar-notifications').slimScroll({ height: 250 });
+									});
+								</script>
+								<!-- / Javascript -->
+
+								<div class="dropdown-menu widget-notifications no-padding" style="width: 300px">
+									<div class="notifications-list" id="main-navbar-notifications">
+
+										<div class="notification">
+											<div class="notification-title text-danger">SYSTEM</div>
+											<div class="notification-description"><strong>Error 500</strong>: Syntax error in index.php at line <strong>461</strong>.</div>
+											<div class="notification-ago">12h ago</div>
+											<div class="notification-icon fa fa-hdd-o bg-danger"></div>
+										</div> <!-- / .notification -->
+
+										<div class="notification">
+											<div class="notification-title text-info">info</div>
+											<div class="notification-description">You have <strong>9</strong> new orders.</div>
+											<div class="notification-ago">12h ago</div>
+											<div class="notification-icon fa fa-truck bg-info"></div>
+										</div> <!-- / .notification -->
+
+										<div class="notification">
+											<div class="notification-title text-default">default</div>
+											<div class="notification-description">Job <strong>"Clean DB"</strong> has been completed.</div>
+											<div class="notification-ago">12h ago</div>
+											<div class="notification-icon fa fa-clock-o bg-default"></div>
+										</div> <!-- / .notification -->
+
+										<div class="notification">
+											<div class="notification-title text-success">success</div>
+											<div class="notification-description">Server <strong>up</strong>.</div>
+											<div class="notification-ago">12h ago</div>
+											<div class="notification-icon fa fa-hdd-o bg-success"></div>
+										</div> <!-- / .notification -->
+
+										<div class="notification">
+											<div class="notification-title text-warning">warning</div>
+											<div class="notification-description"><strong>Warning</strong>: Processor load <strong>92%</strong>.</div>
+											<div class="notification-ago">12h ago</div>
+											<div class="notification-icon fa fa-hdd-o bg-warning"></div>
+										</div> <!-- / .notification -->
+
+									</div> <!-- / .notifications-list -->
+									<a href="#" class="notifications-link">MAIS NOTIFICAÇÕES</a>
+								</div> <!-- / .dropdown-menu -->
+							</li>
+<!-- /3. $END_NAVBAR_ICON_BUTTONS -->
+
+							<li>
+								<form class="navbar-form pull-left">
+									<input type="text" class="form-control" placeholder="Buscar">
+								</form>
+							</li>
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle user-menu" data-toggle="dropdown">
+									<img src="assets/demo/avatars/1.jpg" alt="">
+									<span>Alô Panvel</span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#"><span class="badge badge-primary pull-right">Novo</span>Conta</a></li>
+									<li><a href="#"><i class="dropdown-icon fa fa-cog"></i>&nbsp;&nbsp;Configurações</a></li>
+									<li class="divider"></li>
+									<li><a href="pages-signin.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Sair</a></li>
+								</ul>
+							</li>
+						</ul> <!-- / .navbar-nav -->
+					</div> <!-- / .right -->
+				</div>
+			</div> <!-- / #main-navbar-collapse -->
+		</div> <!-- / .navbar-inner -->
+	</div> <!-- / #main-navbar -->
+<!-- /2. $END_MAIN_NAVIGATION -->
+
+
+<!-- 4. $MAIN_MENU /4. $MAIN_MENU -->
+
+	<div id="content-wrapper">
+		<ul class="breadcrumb breadcrumb-page">
+			<div class="breadcrumb-label text-light-gray">Você está aqui: </div>
+			<li><a href="#">Home</a></li>
+			<li class="active"><a href="#">Dashboard</a></li>
+		</ul>
+		<div class="page-header">
+			<div class="row">
+				<!-- Page header, center on small screens -->
+				<h1 class="col-xs-12 col-sm-4 text-center text-left-sm"><i class="fa fa-dashboard page-header-icon"></i>&nbsp;&nbsp;Dashboard</h1>
+
+				<div class="col-xs-12 col-sm-8">
+					<div class="row">
+						<hr class="visible-xs no-grid-gutter-h">
+
+						<!-- Margin -->
+						<div class="visible-xs clearfix form-group-margin"></div>
+
+					</div>
+				</div>
+			</div>
+		</div> <!-- / .page-header -->
+
+		<div class="row">
+			<div class="col-xs-8">
+
+				<!-- Javascript -->
+				<script>
+					init.push(function () {
+						var map = new google.maps.Map(document.getElementById('widget-maps-example'), {
+							zoom: 16,
+							center: new google.maps.LatLng(-30.060860, -51.170947),
+							mapTypeId: google.maps.MapTypeId.ROADMAP
+						});
+					});
+				</script>
+				<!-- / Javascript -->
+
+				<div class="panel">
+					<div class="panel-heading">
+						<span class="panel-title"><i class="panel-title-icon fa fa-map-marker"></i>Visão Geral Entregadores</span>
+					</div> <!-- / .panel-heading -->
+					<div class="panel-body" style="position:relative;height: 600px;">
+						<div class="widget-maps" id="widget-maps-example" style="height: 100%;"></div>
+					</div> <!-- / .panel-body -->
+				</div> <!-- / .panel -->
+			</div>
+
+			<script>
+				init.push(function () {
+					$('#dashboard-support-tickets .panel-body > div').slimScroll({ height: 300, alwaysVisible: true, color: '#888',allowPageScroll: true });
+				})
+			</script>
+			<!-- / Javascript -->
+
+			<div class="col-xs-4">
+				<div class="panel panel-success widget-support-tickets" id="dashboard-support-tickets">
+					<div class="panel-heading">
+						<span class="panel-title"><i class="panel-title-icon fa fa-bullhorn"></i>Entregas em andamento</span>
+					</div> <!-- / .panel-heading -->
+					<div class="panel-body tab-content-padding">
+						<!-- Panel padding, without vertical padding -->
+						<div class="panel-padding no-padding-vr">
+
+							<div class="ticket">
+								<span class="label label-success ticket-label">Finalizada</span>
+								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201798]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#" title="">Timothy Owens</a> today
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-warning ticket-label">Expedição</span>
+								<a href="#" title="" class="ticket-title">Mobile App Problem<span>[#201797]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Denise Steiner</a> 2 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-info ticket-label">Em rota</span>
+								<a href="#" title="" class="ticket-title">
+									<i class="fa fa-warning text-danger"></i>PayPal issue<span>[#201796]</span>
+								</a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Robert Jang</a> 3 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-danger ticket-label">Falhou</span>
+								<a href="#" title="" class="ticket-title">IE8 problem<span>[#201795]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Robert Jang</a> 4 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-success ticket-label">Finalizada</span>
+								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201794]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Timothy Owens</a> 5 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-success ticket-label">Finalizada</span>
+								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201798]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#" title="">Timothy Owens</a> today
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-warning ticket-label">Expedição</span>
+								<a href="#" title="" class="ticket-title">Mobile App Problem<span>[#201797]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Denise Steiner</a> 2 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-info ticket-label">Em rota</span>
+								<a href="#" title="" class="ticket-title">
+									<i class="fa fa-warning text-danger"></i>PayPal issue<span>[#201796]</span>
+								</a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Robert Jang</a> 3 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-danger ticket-label">Falhou</span>
+								<a href="#" title="" class="ticket-title">IE8 problem<span>[#201795]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Robert Jang</a> 4 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-success ticket-label">Finalizada</span>
+								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201794]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Timothy Owens</a> 5 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-success ticket-label">Finalizada</span>
+								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201798]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#" title="">Timothy Owens</a> today
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-warning ticket-label">Expedição</span>
+								<a href="#" title="" class="ticket-title">Mobile App Problem<span>[#201797]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Denise Steiner</a> 2 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-info ticket-label">Em rota</span>
+								<a href="#" title="" class="ticket-title">
+									<i class="fa fa-warning text-danger"></i>PayPal issue<span>[#201796]</span>
+								</a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Robert Jang</a> 3 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-danger ticket-label">Falhou</span>
+								<a href="#" title="" class="ticket-title">IE8 problem<span>[#201795]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Robert Jang</a> 4 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+
+							<div class="ticket">
+								<span class="label label-success ticket-label">Finalizada</span>
+								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201794]</span></a>
+								<span class="ticket-info">
+									Atendido por <a href="#">Timothy Owens</a> 5 horas atrás
+								</span>
+							</div> <!-- / .ticket -->
+						</div>
+					</div> <!-- / .panel-body -->
+				</div> <!-- / .panel -->
+			</div>
+
+	</div> <!-- / #content-wrapper -->
+	<div id="main-menu-bg"></div>
+</div> <!-- / #main-wrapper -->
+
+<!-- Get jQuery from Google CDN -->
+<!--[if !IE]> -->
+	<script type="text/javascript"> window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">'+"<"+"/script>"); </script>
+<!-- <![endif]-->
+<!--[if lte IE 9]>
+	<script type="text/javascript"> window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">'+"<"+"/script>"); </script>
+<![endif]-->
+
+<!-- Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyD3_OTu8IMtzLcPYaWhVmwm0O2P7PXOb6I"></script>
+
+<!-- Pixel Admin's javascripts -->
+<script src="assets/javascripts/bootstrap.min.js"></script>
+<script src="assets/javascripts/pixel-admin.min.js"></script>
+
+<script type="text/javascript">
+	init.push(function () {
+		$.getJSON("/users/list/all")
+		.done(function(){
+			//done
+		});
+		$("a.ticket-title").click(function(){
+			console.debug("Click ticket-title");
+			return false;
+		});
+	})
+	window.PixelAdmin.start(init);
+</script>
+
+</body>
+</html>
