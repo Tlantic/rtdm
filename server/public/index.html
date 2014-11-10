@@ -24,19 +24,19 @@
 </head>
 
 
-<!-- 1. $BODY ======================================================================================
+ <!-- 1. $BODY ====================================================================================== -->
 
-	Body
+	<!-- Body -->
 
-	Classes:
-	* 'theme-{THEME NAME}'
-	* 'right-to-left'      - Sets text direction to right-to-left
-	* 'main-menu-right'    - Places the main menu on the right side
-	* 'no-main-menu'       - Hides the main menu
-	* 'main-navbar-fixed'  - Fixes the main navigation
-	* 'main-menu-fixed'    - Fixes the main menu
-	* 'main-menu-animated' - Animate main menu
--->
+	<!-- Classes: -->
+	<!-- * 'theme-{THEME NAME}' -->
+	<!-- * 'right-to-left'      - Sets text direction to right-to-left -->
+	<!-- * 'main-menu-right'    - Places the main menu on the right side -->
+	<!-- * 'no-main-menu'       - Hides the main menu -->
+	<!-- * 'main-navbar-fixed'  - Fixes the main navigation -->
+	<!-- * 'main-menu-fixed'    - Fixes the main menu -->
+	<!-- * 'main-menu-animated' - Animate main menu -->
+
 <body class="theme-default main-menu-animated no-main-menu">
 
 <script>var init = [];</script>
@@ -46,7 +46,7 @@
 <!-- 2. $MAIN_NAVIGATION =========================================================================== -->
 	<div id="main-navbar" class="navbar navbar-inverse" role="navigation">
 		<!-- Main menu toggle -->
-		<button type="button" id="main-menu-toggle"><i class="navbar-icon fa fa-bars icon"></i><span class="hide-menu-text">HIDE MENU</span></button>
+		<button type="button" id="main-menu-toggle"><i class="navbar-icon fa fa-bars icon"></i><span class="hide-menu-text">OCULTAR MENU</span></button>
 
 		<div class="navbar-inner">
 			<!-- Main navbar header -->
@@ -68,18 +68,18 @@
 					<div class="right clearfix">
 						<ul class="nav navbar-nav pull-right right-navbar-nav">
 
-<!-- 3. $NAVBAR_ICON_BUTTONS =======================================================================
+ <!-- 3. $NAVBAR_ICON_BUTTONS ======================================================================= -->
 
-							Navbar Icon Buttons
+							<!-- Navbar Icon Buttons -->
 
-							NOTE: .nav-icon-btn triggers a dropdown menu on desktop screens only. On small screens .nav-icon-btn acts like a hyperlink.
+							<!-- NOTE: .nav-icon-btn triggers a dropdown menu on desktop screens only. On small screens .nav-icon-btn acts like a hyperlink. -->
 
-							Classes:
-							* 'nav-icon-btn-info'
-							* 'nav-icon-btn-success'
-							* 'nav-icon-btn-warning'
-							* 'nav-icon-btn-danger'
--->
+							<!-- Classes: -->
+							<!-- * 'nav-icon-btn-info' -->
+							<!-- * 'nav-icon-btn-success' -->
+							<!-- * 'nav-icon-btn-warning' -->
+							<!-- * 'nav-icon-btn-danger' -->
+
 							<li class="nav-icon-btn nav-icon-btn-danger dropdown">
 								<a href="#notifications" class="dropdown-toggle" data-toggle="dropdown">
 									<span class="label">5</span>
@@ -167,9 +167,7 @@
 	</div> <!-- / #main-navbar -->
 <!-- /2. $END_MAIN_NAVIGATION -->
 
-
 <!-- 4. $MAIN_MENU /4. $MAIN_MENU -->
-
 	<div id="content-wrapper">
 		<ul class="breadcrumb breadcrumb-page">
 			<div class="breadcrumb-label text-light-gray">Você está aqui: </div>
@@ -195,25 +193,12 @@
 
 		<div class="row">
 			<div class="col-xs-8">
-
-				<!-- Javascript -->
-				<script>
-					init.push(function () {
-						var map = new google.maps.Map(document.getElementById('widget-maps-example'), {
-							zoom: 16,
-							center: new google.maps.LatLng(-30.060860, -51.170947),
-							mapTypeId: google.maps.MapTypeId.ROADMAP
-						});
-					});
-				</script>
-				<!-- / Javascript -->
-
 				<div class="panel">
 					<div class="panel-heading">
 						<span class="panel-title"><i class="panel-title-icon fa fa-map-marker"></i>Visão Geral Entregadores</span>
 					</div> <!-- / .panel-heading -->
 					<div class="panel-body" style="position:relative;height: 600px;">
-						<div class="widget-maps" id="widget-maps-example" style="height: 100%;"></div>
+						<div class="widget-maps" id="delivery-map" style="height: 100%;"></div>
 					</div> <!-- / .panel-body -->
 				</div> <!-- / .panel -->
 			</div>
@@ -231,134 +216,14 @@
 						<span class="panel-title"><i class="panel-title-icon fa fa-bullhorn"></i>Entregas em andamento</span>
 					</div> <!-- / .panel-heading -->
 					<div class="panel-body tab-content-padding">
-						<!-- Panel padding, without vertical padding -->
-						<div class="panel-padding no-padding-vr">
-
-							<div class="ticket">
-								<span class="label label-success ticket-label">Finalizada</span>
-								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201798]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#" title="">Timothy Owens</a> today
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-warning ticket-label">Expedição</span>
-								<a href="#" title="" class="ticket-title">Mobile App Problem<span>[#201797]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Denise Steiner</a> 2 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-info ticket-label">Em rota</span>
-								<a href="#" title="" class="ticket-title">
-									<i class="fa fa-warning text-danger"></i>PayPal issue<span>[#201796]</span>
-								</a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Robert Jang</a> 3 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-danger ticket-label">Falhou</span>
-								<a href="#" title="" class="ticket-title">IE8 problem<span>[#201795]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Robert Jang</a> 4 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-success ticket-label">Finalizada</span>
-								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201794]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Timothy Owens</a> 5 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-success ticket-label">Finalizada</span>
-								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201798]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#" title="">Timothy Owens</a> today
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-warning ticket-label">Expedição</span>
-								<a href="#" title="" class="ticket-title">Mobile App Problem<span>[#201797]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Denise Steiner</a> 2 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-info ticket-label">Em rota</span>
-								<a href="#" title="" class="ticket-title">
-									<i class="fa fa-warning text-danger"></i>PayPal issue<span>[#201796]</span>
-								</a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Robert Jang</a> 3 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-danger ticket-label">Falhou</span>
-								<a href="#" title="" class="ticket-title">IE8 problem<span>[#201795]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Robert Jang</a> 4 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-success ticket-label">Finalizada</span>
-								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201794]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Timothy Owens</a> 5 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-success ticket-label">Finalizada</span>
-								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201798]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#" title="">Timothy Owens</a> today
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-warning ticket-label">Expedição</span>
-								<a href="#" title="" class="ticket-title">Mobile App Problem<span>[#201797]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Denise Steiner</a> 2 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-info ticket-label">Em rota</span>
-								<a href="#" title="" class="ticket-title">
-									<i class="fa fa-warning text-danger"></i>PayPal issue<span>[#201796]</span>
-								</a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Robert Jang</a> 3 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-danger ticket-label">Falhou</span>
-								<a href="#" title="" class="ticket-title">IE8 problem<span>[#201795]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Robert Jang</a> 4 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
-
-							<div class="ticket">
-								<span class="label label-success ticket-label">Finalizada</span>
-								<a href="#" title="" class="ticket-title">Server unavaible<span>[#201794]</span></a>
-								<span class="ticket-info">
-									Atendido por <a href="#">Timothy Owens</a> 5 horas atrás
-								</span>
-							</div> <!-- / .ticket -->
+						<div class="panel-padding no-padding-vr" id="orders2deliver">
+							<!-- div class="ticket" -->
+								<!-- span class="label label-success ticket-label">Finalizada</span -->
+								<!-- a href="#" title="" class="ticket-title">Server unavaible<span>[#201798]</span></a -->
+								<!-- span class="ticket-info" -->
+									<!-- Atendido por <a href="#" title="">Timothy Owens</a> today -->
+								<!-- /span> -->
+							<!-- /div --> <!-- / .ticket -->
 						</div>
 					</div> <!-- / .panel-body -->
 				</div> <!-- / .panel -->
@@ -383,17 +248,9 @@
 <script src="assets/javascripts/bootstrap.min.js"></script>
 <script src="assets/javascripts/pixel-admin.min.js"></script>
 
+<script src="js/poc.js"></script>
+
 <script type="text/javascript">
-	init.push(function () {
-		$.getJSON("/users/list/all")
-		.done(function(){
-			//done
-		});
-		$("a.ticket-title").click(function(){
-			console.debug("Click ticket-title");
-			return false;
-		});
-	})
 	window.PixelAdmin.start(init);
 </script>
 
