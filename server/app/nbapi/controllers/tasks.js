@@ -81,3 +81,9 @@ exports.update = function (req, res) {
         res.json( mBuilder.buildQuickResponse(err, 'Unexpected error updating task.', task) );
     });
 };
+
+exports.listAll = function (req, res) {
+    Task.find({}, function(err, tasks) {
+        return res.json( mBuilder.buildQuickResponse(err, 'Error listing tasks!', tasks) );
+    });
+};
