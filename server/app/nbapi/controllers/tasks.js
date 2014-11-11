@@ -12,9 +12,7 @@ exports.load = function (req, res, next, id) {
 
     if (req.method === 'PUT') {
         next();
-        
     } else {
-        
         Task.load(id, function (err, task) {
 
             if (err || !task) {
@@ -28,12 +26,10 @@ exports.load = function (req, res, next, id) {
 };
 
 exports.checkOwnership = function (req, res, next, id) {
-    
     if (id) {
         req.loadedOwner = id;
         next();
     } else {
-        
         return res.json( mBuilder.buildPreConditionFailure('Ownership not found!') );
     }
 };
@@ -69,14 +65,16 @@ exports.create = function (req, res) {
  */
 exports.update = function (req, res) {
     var task = req.loadedTask;
-    
-    task = _.extend(task, req.body);
+
+    // task = _.extend(task, req.body);
     task = _.extend(task, {
         lastUpdate: {
             timestamp: Date.now(),
+            lat: req.body.lastCoords.lat,
+            lon: req.body.lastCoords.lon
         }
     });
-    
+
     task.save(function (err) {
         res.json( mBuilder.buildQuickResponse(err, 'Unexpected error updating task.', task) );
     });
