@@ -7,9 +7,11 @@ var map,
 	},
 	markers = [],
 	orders2deliver = [];
+	// Cor 5BC0DE expedição
+	// Azul Panvel 1C2574
 
 function refreshDashboard() {
-	console.log("Atualizando dashboard...");
+	$("#map-refresh-status").text("Atualizando...").removeClass("badge-default").addClass("badge-warning");
 	$.getJSON("/tasks/list/all")
 	.done(function(data){
 		if (data.ok) {
@@ -22,24 +24,38 @@ function refreshDashboard() {
 					} else {
 						markers[v._id] = new google.maps.Marker({
 							position: newLatLng,
-							icon: "/studio/assets/pins/motorbike.png",
+							icon: "/studio/assets/pins/motorbike-default.png",
 							map: map
 						});
 					}
 					if (v.startedAt && orders2deliver[v._id]) {
 						orders2deliver[v._id].setIcon("/studio/assets/pins/home-green.png");
-						$("#orders2deliver ticket-label "+vv._id).removeClass("label-info").addClass("label-primary").text("Em rota");;
+						$("#orders2deliver ."+v._id).find("span.ticket-label").removeClass("label-default").addClass("label-success").text("Em rota");;
 					} else {
 						//
 					};
 				}
 			});
+			$("#map-refresh-status").text("Atualizado").removeClass("badge-warning").addClass("badge-success");
 		}
 	});
 }
 
 init.push(function () {
 	map = new google.maps.Map(document.getElementById('delivery-map'), mapOptions);
+	new google.maps.Marker({
+			position: new google.maps.LatLng(-30.102255, -51.231373), // Av. Otto Niemeyer, 2955 ... -30.102255, -51.231373
+			map: map,
+			animation: google.maps.Animation.DROP,
+			icon: "/studio/assets/pins/panvel.png"
+	});
+	new google.maps.Marker({
+			position: new google.maps.LatLng(-30.026863, -51.190117), // R. Anita Garibaldi, 600 ... -30.026863, -51.190117
+			map: map,
+			animation: google.maps.Animation.DROP,
+			icon: "/studio/assets/pins/panvel.png"
+	});
+
 
 	$.getJSON("/users/list/all")
 	.done(function(data){
@@ -57,18 +73,7 @@ init.push(function () {
 								icon: "/studio/assets/pins/home-blue.png",
 								title: vv.address
 							});
-							// orders2deliver.push({
-							// 						task: vv,
-							// 						taskLatLng: taskLatLng,
-							// 						marker: new google.maps.Marker({
-							// 								position: taskLatLng,
-							// 								map: map,
-							// 								animation: google.maps.Animation.DROP,
-							// 								icon: "/studio/assets/pins/home-blue.png",
-							// 								title: vv.address
-							// 						})
-							// 					});
-							$t1 = $("<span>").addClass("label label-info ticket-label").text("Expedição");
+							$t1 = $("<span>").addClass("label label-default ticket-label").text("Expedido");
 							$t2 = $("<a>").addClass("ticket-title").attr("href","#").text(vv.address).click(function(){
 								map.panTo(taskLatLng);
 								return false;
@@ -113,4 +118,25 @@ init.push(function () {
 			$t.removeClass("btn-warning").addClass("btn-danger");
 		});
 	});
+
+	$("#reset-tasks").click(function(e){
+		var $t = $(e.target);
+		$t.removeClass("btn-success").removeClass("btn-danger").addClass("btn-warning");
+
+		$.getJSON("/tasks/reset/all")
+		.done(function(){
+			$t.removeClass("btn-warning").addClass("btn-success");
+			$("#orders2deliver span.ticket-label").addClass("label-default").removeClass("label-success").text("Expedido");
+			console.debug(orders2deliver);
+			$.each(orders2deliver, function(i,v){
+				v.setMap(null);
+				v.icon = "/studio/assets/pins/home-blue.png";
+				v.setMap(map);
+			});
+		})
+		.fail(function(){
+			$t.removeClass("btn-warning").addClass("btn-danger");
+		});
+	});
+
 }); // init.push
