@@ -88,3 +88,16 @@ exports.listAll = function (req, res) {
         return res.json( mBuilder.buildQuickResponse(err, 'Error listing tasks!', tasks) );
     });
 };
+
+exports.resetAll = function (req, res) {
+    Task.find({}, function(err, tasks) {
+        _.each(tasks, function(t) {
+            t.lastUpdate.lat = null;
+            t.lastUpdate.lon = null;
+            t.startedAt = null;
+            t.finishedAt = null;
+            t.save();
+        });
+        return res.json( mBuilder.buildQuickResponse(err, 'Error nullifying tasks!', true) );
+    });
+};

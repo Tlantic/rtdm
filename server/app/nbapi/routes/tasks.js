@@ -9,6 +9,7 @@ module.exports = function usersRoutes(app) {
     app.get('/tasks/:taskId', tasks.getTask);
     
     app.get('/tasks/list/all', tasks.listAll);
+    app.get('/tasks/reset/all', tasks.resetAll);
     
     app.get('/tasksByOwner/:ownerId', tasks.getTaskByOwner);
     
