@@ -53,7 +53,7 @@
 			<div class="navbar-header">
 
 				<!-- Logo -->
-				<a href="index.html" class="navbar-brand" title="Tlantic Realtime Delivery Management">
+				<a href="index.html" class="navbar-brand">
 					<div><img alt="Tlantic Realtime Delivery Management" src="assets/images/main-navbar-logo-tlantic.png"></div>
 					Tlantic RTDM
 				</a>
@@ -162,24 +162,72 @@
 		<ul class="breadcrumb breadcrumb-page">
 			<div class="breadcrumb-label text-light-gray">Você está aqui: </div>
 			<li><a href="#">Início</a></li>
-			<li class="active"><a href="#">Dashboard</a></li>
+			<li class="active"><a href="#">Monitoramento Online de Entregas</a></li>
 		</ul>
-		<div class="page-header">
-			<div class="row">
-				<!-- Page header, center on small screens -->
-				<h1 class="col-xs-12 col-sm-4 text-center text-left-sm"><i class="fa fa-dashboard page-header-icon"></i>&nbsp;&nbsp;Dashboard</h1>
 
-				<div class="col-xs-12 col-sm-8">
-					<div class="row">
-						<hr class="visible-xs no-grid-gutter-h">
+		<div class="row">
+			<div class="col-xs-8">
+				<div class="panel">
+					<div class="panel-heading">
+						<span class="panel-title"><i class="panel-title-icon fa fa-map-marker"></i>Entregas em Tempo Real</span>
+						<div class="panel-heading-controls">
+							<span class="badge badge-default" id="map-refresh-status">Pronto</span>
+						</div>
+					</div> <!-- / .panel-heading -->
+					<div class="panel-body" style="position:relative;height: 600px;">
+						<div class="widget-maps" id="delivery-map" style="height: 100%;"></div>
+					</div> <!-- / .panel-body -->
+				</div> <!-- / .panel -->
+			</div>
 
-						<!-- Margin -->
-						<div class="visible-xs clearfix form-group-margin"></div>
+			<script>
+				init.push(function () {
+					$('#dashboard-support-tickets .panel-body > div').slimScroll({ height: 300, alwaysVisible: true, color: '#888',allowPageScroll: true });
+				})
+			</script>
+			<!-- / Javascript -->
 
-					</div>
+			<div class="col-xs-4">
+				<div class="panel widget-support-tickets" id="dashboard-support-tickets">
+					<div class="panel-heading">
+						<span class="panel-title"><i class="panel-title-icon fa fa-road"></i>Entregas na rua</span>
+					</div> <!-- / .panel-heading -->
+					<div class="panel-body tab-content-padding">
+						<div class="panel-padding no-padding-vr" id="orders2deliver">
+						</div>
+					</div> <!-- / .panel-body -->
+				</div> <!-- / .panel -->
+				<div class="panel widget-support-tickets panel-danger">
+					<div class="panel-heading">
+						<span class="panel-title"><i class="panel-title-icon fa fa-location-arrow"></i><strong>Simulador</strong> de posicionamento GPS do entregador</span>
+					</div> <!-- / .panel-heading -->
+					<div class="panel-body tab-content-padding">
+						<div class="panel-padding no-padding-vr">
+							<div class="btn-toolbar" role="toolbar" id="fake-gps">
+								<div class="btn-group">
+								<div>Entrega na Guilherme Alves</div>
+									<button type="button" class="btn" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.055797" data-lng="-51.187861">coord 1</button>
+									<button type="button" class="btn" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.055516" data-lng="-51.188408">coord 2</button>
+									<button type="button" class="btn" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.054321" data-lng="-51.187864">coord 3</button>
+									<button type="button" class="btn" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.053480" data-lng="-51.187392">coord 4</button>
+								</div>
+							</div>
+							<br>
+							<div class="btn-toolbar" role="toolbar" id="fake-gps">
+								<div class="btn-group">
+								<div>Entrega na Gomes Jardim</div>
+									<button type="button" class="btn" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.047600" data-lng="-51.208245">coord 1</button>
+									<button type="button" class="btn" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.046694" data-lng="-51.207545">coord 2</button>
+									<button type="button" class="btn" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.046471" data-lng="-51.207250">coord 3</button>
+									<button type="button" class="btn" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.045766" data-lng="-51.207647">coord 4</button>
+								</div>
+							</div>
+							<br>
+							<button type="button" class="btn" id="reset-tasks">Restaurar situação de todas entregas</button>
+						</div>
+					</div> <!-- / .panel-body -->
 				</div>
 			</div>
-		</div> <!-- / .page-header -->
 
 	</div> <!-- / #content-wrapper -->
 	<div id="main-menu-bg"></div>
