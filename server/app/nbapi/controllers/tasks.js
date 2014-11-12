@@ -67,6 +67,9 @@ exports.update = function (req, res) {
     var task = req.loadedTask;
 
     // task = _.extend(task, req.body);
+    if (task.startedAt==null || task.startedAt==undefined) {
+        task.startedAt = Date.now();
+    }
     task = _.extend(task, {
         lastUpdate: {
             timestamp: Date.now(),
