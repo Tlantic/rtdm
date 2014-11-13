@@ -1,0 +1,604 @@
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9552,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:33:08.587Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9552,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:33:08.603Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9552,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:33:09.500Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9552,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:33:09.625Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9552,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:33:09.641Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9552,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:33:09.656Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9552,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:33:09.656Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9552,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:33:09.656Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7580,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:42:40.928Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7580,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:42:40.934Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7580,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:42:41.828Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7580,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:42:41.939Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7580,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T13:42:41.939Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7580,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:42:41.941Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7580,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:42:41.948Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7580,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:42:41.948Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7580,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:42:41.948Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9100,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:43:15.098Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9100,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:43:15.113Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9100,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:43:15.973Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9100,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:43:16.082Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9100,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T13:43:16.082Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9100,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:43:16.082Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9100,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:43:16.098Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9100,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:43:16.098Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9100,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:43:16.098Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6792,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:44:00.885Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6792,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:44:00.901Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6792,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:44:01.802Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6792,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:44:01.907Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6792,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T13:44:01.908Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6792,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:44:01.909Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6792,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:44:01.915Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6792,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:44:01.915Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6792,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:44:01.915Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:44:20.869Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:44:20.875Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:44:21.774Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:44:21.885Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T13:44:21.906Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:44:21.907Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:44:21.913Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:44:21.913Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:44:21.913Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6452,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:48:51.614Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6452,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:48:51.614Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6452,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:48:52.501Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6452,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:48:52.611Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6452,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T13:48:52.626Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6452,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:48:52.626Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6452,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:48:52.642Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6452,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:48:52.642Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6452,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:48:52.642Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:50:29.335Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:50:29.350Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:50:30.225Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:50:30.319Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:50:30.350Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:50:30.350Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:50:30.350Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:50:30.350Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9396,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:53:45.483Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9396,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:53:45.483Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9396,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:53:46.424Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9396,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:53:46.551Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9396,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:53:46.591Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9396,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:53:46.599Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9396,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:53:46.599Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9396,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:53:46.599Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9228,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:53:50.685Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9228,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:53:50.690Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9228,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:53:51.625Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9228,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:53:51.750Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9228,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:53:51.780Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9228,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:53:51.790Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9228,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:53:51.790Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9228,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:53:51.790Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:56:15.898Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:56:15.904Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:56:16.838Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:56:16.956Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:56:16.986Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:56:16.993Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:56:16.993Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:56:16.993Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7488,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:57:16.081Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7488,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:57:16.081Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7488,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:57:17.015Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7488,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:57:17.138Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7488,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:57:17.155Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7488,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:57:17.171Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7488,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:57:17.171Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7488,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:57:17.171Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6640,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:57:21.103Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6640,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:57:21.109Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6640,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:57:22.044Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6640,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:57:22.186Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6640,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:57:22.216Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6640,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:57:22.224Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6640,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:57:22.224Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6640,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:57:22.224Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2484,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:59:26.951Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2484,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:59:26.951Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2484,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:59:27.947Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2484,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:59:28.068Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2484,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:59:28.097Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2484,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:59:28.104Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2484,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:59:28.104Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2484,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:59:28.104Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9484,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T13:59:44.516Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9484,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T13:59:44.516Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9484,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T13:59:45.207Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9484,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T13:59:45.296Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9484,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T13:59:45.316Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9484,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T13:59:45.322Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9484,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T13:59:45.322Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9484,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T13:59:45.322Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5000,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:01:11.638Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5000,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:01:11.638Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5000,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:01:12.544Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5000,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:01:12.669Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5000,"widget_type":"pas-router","level":30,"msg":"Publishing folder  /public","time":"2014-11-05T14:01:12.685Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5000,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:01:12.685Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5000,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:01:12.700Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5000,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:01:12.700Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5000,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:01:12.700Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:02:25.098Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:02:25.114Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:02:25.973Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:02:26.082Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-router","level":30,"msg":"Publishing folder  /public","time":"2014-11-05T14:02:26.098Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:02:26.098Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:02:26.114Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:02:26.114Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7164,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:02:26.114Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5872,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:02:39.666Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5872,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:02:39.681Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5872,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:02:40.632Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5872,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:02:40.768Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5872,"widget_type":"pas-router","level":30,"msg":"Publishing folder  /public","time":"2014-11-05T14:02:40.806Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5872,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:02:40.806Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5872,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:02:40.815Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5872,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:02:40.815Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5872,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:02:40.815Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:04:00.484Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:04:00.490Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:04:01.450Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:04:01.575Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-router","level":30,"msg":"Publishing folder  /public","time":"2014-11-05T14:04:01.603Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:04:01.604Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:04:01.610Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:04:01.610Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:04:01.610Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7548,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:04:05.496Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7548,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:04:05.503Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7548,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:04:06.423Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7548,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:04:06.536Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7548,"widget_type":"pas-router","level":30,"msg":"Publishing folder  /public","time":"2014-11-05T14:04:06.565Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7548,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:04:06.565Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7548,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:04:06.573Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7548,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:04:06.573Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7548,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:04:06.573Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:06:04.743Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:06:04.743Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:06:05.618Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:06:05.727Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-router","level":30,"msg":"Publishing folder  /public","time":"2014-11-05T14:06:05.759Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:06:05.759Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:06:05.759Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:06:05.759Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":2404,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:06:05.759Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7500,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:09:00.567Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7500,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:09:00.573Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7500,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:09:01.511Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7500,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:09:01.635Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7500,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:09:01.664Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7500,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:09:01.672Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7500,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:09:01.673Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7500,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:09:01.673Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7492,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:09:05.893Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7492,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:09:05.908Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7492,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:09:06.785Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7492,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:09:06.910Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7492,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:09:06.941Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7492,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:09:06.941Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7492,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:09:06.941Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7492,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:09:06.941Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4788,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:11:52.274Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4788,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:11:52.274Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4788,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:11:53.180Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4788,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:11:53.289Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4788,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:11:53.305Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4788,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:11:53.320Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4788,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:11:53.320Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4788,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:11:53.320Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9904,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:12:32.864Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9904,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:12:32.869Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9904,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:12:33.773Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9904,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:12:33.877Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9904,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:12:33.904Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9904,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:12:33.910Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9904,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:12:33.911Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9904,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:12:33.911Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7544,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:13:02.961Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7544,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:13:02.976Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7544,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:13:03.898Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7544,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:13:04.007Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7544,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:13:04.039Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7544,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:13:04.054Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7544,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:13:04.054Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7544,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:13:04.054Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5868,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:14:23.223Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5868,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:14:23.228Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5868,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:14:24.190Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5868,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:14:24.312Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5868,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:14:24.340Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5868,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:14:24.348Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5868,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:14:24.348Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":5868,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:14:24.348Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7304,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:15:13.380Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7304,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:15:13.385Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7304,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:15:14.310Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7304,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:15:14.429Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7304,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:15:14.459Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7304,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:15:14.465Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7304,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:15:14.466Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7304,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:15:14.466Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9312,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:36:03.666Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9312,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:36:03.682Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9312,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:36:04.604Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9312,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:36:04.713Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9312,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:36:04.745Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9312,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:36:04.760Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9312,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:36:04.760Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9312,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:36:04.760Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10124,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:36:54.505Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10124,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:36:54.511Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10124,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:36:55.462Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10124,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:36:55.587Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10124,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T14:36:55.616Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10124,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:36:55.619Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10124,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:36:55.625Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10124,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:36:55.625Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10124,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:36:55.625Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6464,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:37:19.574Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6464,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:37:19.590Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6464,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:37:20.543Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6464,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:37:20.668Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6464,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:37:20.683Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6464,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:37:20.699Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6464,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:37:20.699Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6464,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:37:20.699Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10028,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:38:29.806Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10028,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:38:29.812Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10028,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:38:30.768Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10028,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:38:30.901Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10028,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T14:38:30.931Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10028,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:38:30.934Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10028,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:38:30.940Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10028,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:38:30.940Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10028,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:38:30.940Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:38:49.873Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:38:49.879Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:38:50.844Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:38:50.969Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:38:51.000Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:38:51.016Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:38:51.016Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8440,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:38:51.016Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10096,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:41:25.368Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10096,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:41:25.368Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10096,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:41:26.319Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10096,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:41:26.442Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10096,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T14:41:26.469Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10096,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:41:26.472Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10096,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:41:26.478Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10096,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:41:26.478Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10096,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:41:26.478Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4216,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:41:35.398Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4216,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:41:35.402Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4216,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:41:36.351Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4216,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:41:36.475Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4216,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T14:41:36.502Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4216,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:41:36.504Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4216,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:41:36.512Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4216,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:41:36.512Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4216,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:41:36.512Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8056,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:42:25.544Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8056,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:42:25.544Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8056,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:42:26.482Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8056,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:42:26.591Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8056,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:42:26.623Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8056,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:42:26.623Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8056,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:42:26.623Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8056,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:42:26.623Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9836,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:45:01.040Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9836,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:45:01.045Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9836,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:45:02.028Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9836,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:45:02.147Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9836,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:45:02.174Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9836,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:45:02.181Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9836,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:45:02.181Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9836,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:45:02.181Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6152,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:45:06.070Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6152,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:45:06.075Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6152,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:45:07.055Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6152,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:45:07.182Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6152,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:45:07.212Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6152,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:45:07.220Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6152,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:45:07.220Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6152,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:45:07.220Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3816,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:46:56.125Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3816,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:46:56.125Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3816,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:46:57.032Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3816,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:46:57.141Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3816,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:46:57.172Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3816,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:46:57.172Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3816,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:46:57.172Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3816,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:46:57.172Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9264,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:47:46.945Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9264,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:47:46.951Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9264,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:47:47.852Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9264,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:47:47.974Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9264,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:47:48.011Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9264,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:47:48.019Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9264,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:47:48.020Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9264,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:47:48.020Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10048,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:48:01.900Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10048,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:48:01.906Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10048,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:48:02.827Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10048,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:48:02.945Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10048,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:48:02.975Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10048,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:48:02.984Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10048,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:48:02.984Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10048,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:48:02.984Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:51:16.071Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:51:16.071Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:51:16.993Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:51:17.086Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:51:17.118Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:51:17.118Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:51:17.118Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:51:17.118Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3144,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:51:31.815Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3144,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:51:31.821Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3144,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:51:32.822Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3144,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:51:32.949Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3144,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:51:32.981Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3144,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:51:32.990Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3144,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:51:32.990Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3144,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:51:32.990Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6608,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:52:32.002Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6608,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:52:32.011Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6608,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:52:33.064Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6608,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:52:33.194Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6608,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:52:33.229Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6608,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:52:33.234Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6608,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:52:33.234Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6608,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:52:33.235Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7528,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:52:42.039Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7528,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:52:42.039Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7528,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:52:43.119Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7528,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:52:43.250Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7528,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:52:43.281Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7528,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:52:43.297Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7528,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:52:43.297Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7528,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:52:43.297Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4832,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:54:12.296Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4832,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:54:12.301Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4832,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:54:13.231Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4832,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:54:13.342Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4832,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:54:13.372Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4832,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:54:13.381Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4832,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:54:13.381Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4832,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:54:13.381Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3700,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:54:17.313Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3700,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:54:17.319Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3700,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:54:18.232Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3700,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:54:18.354Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3700,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:54:18.383Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3700,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:54:18.389Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3700,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:54:18.389Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3700,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:54:18.390Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3904,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:55:37.567Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3904,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:55:37.573Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3904,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:55:38.474Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3904,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:55:38.601Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3904,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:55:38.632Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3904,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:55:38.640Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3904,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:55:38.640Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3904,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:55:38.640Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10140,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:56:32.733Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10140,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:56:32.739Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10140,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:56:33.677Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10140,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:56:33.795Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10140,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:56:33.826Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10140,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:56:33.835Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10140,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:56:33.835Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10140,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:56:33.835Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9720,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T14:57:07.831Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9720,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T14:57:07.847Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9720,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T14:57:08.753Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9720,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T14:57:08.866Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9720,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T14:57:08.896Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9720,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T14:57:08.904Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9720,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T14:57:08.904Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9720,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T14:57:08.904Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10532,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:11:24.083Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10532,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:11:24.083Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10532,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:11:25.098Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10532,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:11:25.239Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10532,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:11:25.270Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10532,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:11:25.270Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10532,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:11:25.270Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10532,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:11:25.270Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6356,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:12:43.549Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6356,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:12:43.549Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6356,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:12:44.658Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6356,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:12:44.799Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6356,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:12:44.830Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6356,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:12:44.845Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6356,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:12:44.845Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":6356,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:12:44.845Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7448,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:14:19.451Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7448,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:14:19.458Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7448,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:14:20.418Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7448,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:14:20.560Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7448,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:14:20.595Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7448,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:14:20.603Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7448,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:14:20.603Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":7448,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:14:20.604Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10228,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:21:50.852Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10228,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:21:50.861Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10228,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:21:51.948Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10228,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:21:52.084Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10228,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:21:52.134Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10228,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:21:52.143Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10228,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:21:52.144Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10228,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:21:52.145Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":1080,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:24:21.390Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":1080,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:24:21.397Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":1080,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:24:22.364Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":1080,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:24:22.509Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":1080,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T17:24:22.538Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":1080,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:24:22.542Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":1080,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:24:22.550Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":1080,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:24:22.551Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":1080,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:24:22.551Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10284,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:24:36.466Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10284,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:24:36.471Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10284,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:24:37.443Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10284,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:24:37.578Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10284,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T17:24:37.609Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10284,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:24:37.612Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10284,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:24:37.620Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10284,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:24:37.621Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10284,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:24:37.621Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8980,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:28:02.071Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8980,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:28:02.075Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8980,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:28:03.041Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8980,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:28:03.166Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8980,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T17:28:03.197Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8980,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:28:03.197Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8980,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:28:03.197Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8980,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:28:03.197Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8980,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:28:03.197Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4404,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:28:12.105Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4404,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:28:12.109Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4404,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:28:13.090Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4404,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:28:13.222Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4404,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T17:28:13.251Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4404,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:28:13.254Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4404,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:28:13.262Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4404,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:28:13.262Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4404,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:28:13.263Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11164,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:32:07.850Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11164,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:32:07.856Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11164,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:32:08.824Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11164,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:32:08.958Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11164,"widget_type":"pas-router","level":50,"msg":"Error loading API:  /app/nbapi/routes","time":"2014-11-05T17:32:08.988Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11164,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:32:08.991Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11164,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:32:09.000Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11164,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:32:09.000Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11164,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:32:09.001Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4360,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:37:28.879Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4360,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:37:28.886Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4360,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:37:29.991Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4360,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:37:30.146Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4360,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:37:30.181Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4360,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:37:30.190Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4360,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:37:30.190Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":4360,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:37:30.191Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10992,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:38:44.108Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10992,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:38:44.114Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10992,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:38:45.186Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10992,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:38:45.331Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10992,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:38:45.368Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10992,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:38:45.378Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10992,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:38:45.378Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10992,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:38:45.379Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8784,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:39:04.186Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8784,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:39:04.191Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8784,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:39:05.255Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8784,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:39:05.364Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8784,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:39:05.395Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8784,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:39:05.411Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8784,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:39:05.411Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8784,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:39:05.411Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9376,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:39:49.285Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9376,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:39:49.290Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9376,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:39:50.286Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9376,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:39:50.411Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9376,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:39:50.445Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9376,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:39:50.453Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9376,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:39:50.453Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9376,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:39:50.454Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":908,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:40:04.343Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":908,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:40:04.349Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":908,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:40:05.388Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":908,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:40:05.518Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":908,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:40:05.555Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":908,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:40:05.562Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":908,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:40:05.563Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":908,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:40:05.563Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11184,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:40:09.349Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11184,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:40:09.353Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11184,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:40:10.319Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11184,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:40:10.444Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11184,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:40:10.476Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11184,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:40:10.476Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11184,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:40:10.476Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":11184,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:40:10.476Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T17:42:14.868Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T17:42:14.883Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T17:42:15.961Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T17:42:16.102Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T17:42:16.149Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T17:42:16.149Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T17:42:16.149Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8732,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T17:42:16.149Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10708,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T18:07:28.457Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10708,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T18:07:28.457Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10708,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T18:07:29.591Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10708,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T18:07:29.739Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10708,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T18:07:29.771Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10708,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T18:07:29.771Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10708,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T18:07:29.771Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10708,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T18:07:29.786Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3784,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T18:19:16.082Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3784,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T18:19:16.082Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3784,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T18:19:17.066Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3784,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T18:19:17.191Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3784,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T18:19:17.223Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3784,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T18:19:17.238Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3784,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T18:19:17.238Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3784,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T18:19:17.238Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10880,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T18:28:48.450Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10880,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T18:28:48.466Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10880,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T18:28:49.419Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10880,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T18:28:49.544Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10880,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T18:28:49.591Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10880,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T18:28:49.591Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10880,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T18:28:49.591Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10880,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T18:28:49.591Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8100,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T18:29:43.596Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8100,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T18:29:43.600Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8100,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T18:29:44.597Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8100,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T18:29:44.728Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8100,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T18:29:44.764Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8100,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T18:29:44.773Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8100,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T18:29:44.774Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":8100,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T18:29:44.774Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9280,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T18:50:28.794Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9280,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T18:50:28.794Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9280,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T18:50:29.794Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9280,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T18:50:29.919Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9280,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T18:50:29.950Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9280,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T18:50:29.950Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9280,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T18:50:29.950Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9280,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T18:50:29.950Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T18:53:30.072Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T18:53:30.078Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T18:53:31.118Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T18:53:31.253Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T18:53:31.284Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T18:53:31.300Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T18:53:31.300Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":3652,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T18:53:31.300Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T19:08:34.603Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T19:08:34.603Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T19:08:35.587Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T19:08:35.712Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T19:08:35.743Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T19:08:35.743Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T19:08:35.743Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":10052,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T19:08:35.743Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9972,"level":30,"msg":"Starting server blocks...","time":"2014-11-05T19:18:27.508Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9972,"widget_type":"pas-core","level":30,"msg":"Initializing Application Server Core block...","time":"2014-11-05T19:18:27.514Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9972,"widget_type":"pas-router","level":30,"msg":"Configuring ExpressJS for routing...","time":"2014-11-05T19:18:28.564Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9972,"widget_type":"pas-router","level":30,"msg":"Loading API  /app/nbapi/routes","time":"2014-11-05T19:18:28.696Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9972,"widget_type":"pas-router","level":30,"msg":"Creating http server...","time":"2014-11-05T19:18:28.733Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9972,"widget_type":"pas-router","level":30,"msg":"Pegasus HTTP Server listening on port  5000","time":"2014-11-05T19:18:28.741Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9972,"widget_type":"pas-router","level":40,"msg":"Pegasus HTTPS Server is not enabled! Please consider enable it to provide a secure API.","time":"2014-11-05T19:18:28.741Z","v":0}
+{"name":"application_server","hostname":"TlanPA-NB06","pid":9972,"level":30,"msg":"Pegasus Application Server is up and flying...","time":"2014-11-05T19:18:28.742Z","v":0}

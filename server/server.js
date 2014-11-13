@@ -36,7 +36,7 @@ router.loadAPI('/app/nbapi/routes');
 
 
 // publishing studio
-router.app.use('/app', require('express').static(__dirname + "/public"));
+router.app.use('/studio', require('express').static(__dirname + "/public"));
 
 
 // ***** Start the app by listening on <port> *****

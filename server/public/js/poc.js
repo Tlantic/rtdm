@@ -24,12 +24,12 @@ function refreshDashboard() {
 					} else {
 						markers[v._id] = new google.maps.Marker({
 							position: newLatLng,
-							icon: "/app/assets/pins/motorbike-default.png",
+							icon: "/studio/assets/pins/motorbike-default.png",
 							map: map
 						});
 					}
 					if (v.startedAt && orders2deliver[v._id]) {
-						orders2deliver[v._id].setIcon("/app/assets/pins/home-green.png");
+						orders2deliver[v._id].setIcon("/studio/assets/pins/home-green.png");
 						$("#orders2deliver ."+v._id).find("span.ticket-label").removeClass("label-default").addClass("label-success").text("Em rota");;
 					} else {
 						//
@@ -47,13 +47,13 @@ init.push(function () {
 			position: new google.maps.LatLng(-30.102255, -51.231373), // Av. Otto Niemeyer, 2955 ... -30.102255, -51.231373
 			map: map,
 			animation: google.maps.Animation.DROP,
-			icon: "/app/assets/pins/panvel.png"
+			icon: "/studio/assets/pins/panvel.png"
 	});
 	new google.maps.Marker({
 			position: new google.maps.LatLng(-30.026863, -51.190117), // R. Anita Garibaldi, 600 ... -30.026863, -51.190117
 			map: map,
 			animation: google.maps.Animation.DROP,
-			icon: "/app/assets/pins/panvel.png"
+			icon: "/studio/assets/pins/panvel.png"
 	});
 
 
@@ -70,7 +70,7 @@ init.push(function () {
 								position: taskLatLng,
 								map: map,
 								animation: google.maps.Animation.DROP,
-								icon: "/app/assets/pins/home-blue.png",
+								icon: "/studio/assets/pins/home-blue.png",
 								title: vv.address
 							});
 							$t1 = $("<span>").addClass("label label-default ticket-label").text("Expedido");
@@ -130,7 +130,7 @@ init.push(function () {
 			console.debug(orders2deliver);
 			$.each(orders2deliver, function(i,v){
 				v.setMap(null);
-				v.icon = "/app/assets/pins/home-blue.png";
+				v.icon = "/studio/assets/pins/home-blue.png";
 				v.setMap(map);
 			});
 		})
