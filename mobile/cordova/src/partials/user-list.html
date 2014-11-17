@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span10">
+      <!--Body content-->
+
+      <ul class="users">
+        <li ng-repeat="user in users.result | orderBy:name" 
+            class="user-list">
+          <a href="#/users/{{user._id}}">{{user.name}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

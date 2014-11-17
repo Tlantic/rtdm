@@ -1,0 +1,16 @@
+<div class="content-fluid" ng-controller="TaskCtrl">
+    <div class="content-fluid">
+        <p class="task">
+        Descrição: {{task.description}}
+        </p>
+        <p class="task">
+        Endereço: {{task.address}}
+        </p>
+        <div>
+            <a back-button class="task.button" ng-show="!showFinishAndCancelButtons">&lt; Voltar</a>
+            <a ng-click="startTask()" class="task.button" ng-show="!showFinishAndCancelButtons">Iniciar</a>
+            <a ng-click="cancelTask()" class="task.button" ng-show="showFinishAndCancelButtons">Cancelar</a>
+            <a ng-click="finishTask()" class="task.button" ng-show="showFinishAndCancelButtons">Finalizar</a>
+        </div>
+    </div>
+</div>
