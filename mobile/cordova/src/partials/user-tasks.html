@@ -5,7 +5,7 @@
 
       <ul class="users">
         <li ng-repeat="task in tasks.result | orderBy:createdAt" 
-            class="task-list">
+            class="task-list btn">
           <a href="#/task/{{task._id}}">{{task.description}}:&nbsp;{{task.address}}</a>
         </li>
       </ul>

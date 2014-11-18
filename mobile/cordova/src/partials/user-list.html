@@ -5,7 +5,7 @@
 
       <ul class="users">
         <li ng-repeat="user in users.result | orderBy:name" 
-            class="user-list">
+            class="user-list btn">
           <a href="#/users/{{user._id}}">{{user.name}}</a>
         </li>
       </ul>
