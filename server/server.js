@@ -37,6 +37,7 @@ router.loadAPI('/app/nbapi/routes');
 
 // publishing studio
 router.app.use('/studio', require('express').static(__dirname + "/public"));
+router.app.use('/cordova', require('express').static(__dirname + "/../mobile/cordova/src"));
 
 
 // ***** Start the app by listening on <port> *****
