@@ -1,3 +1,4 @@
 /server/node_modules/
-/server/public/log/pegasus-as.log*
+/server/public/log/
 /server/public/html/
+/mobile/node_modules/

@@ -1,4 +1,4 @@
 rtdm
 ====
 
-Real Time Delivery Manager
+RDTM
