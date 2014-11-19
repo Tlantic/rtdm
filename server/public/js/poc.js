@@ -26,15 +26,15 @@ function refreshDashboard() {
 					} else {
 						markers[v._id] = new google.maps.Marker({
 							position: newLatLng,
-							icon: "/studio/assets/pins/motorbike-default.png",
+							icon: "/backoffice/assets/pins/motorbike-default.png",
 							map: map
 						});
 					}
 					if (v.startedAt && orders2deliver[v._id]) {
-						orders2deliver[v._id].setIcon("/studio/assets/pins/home-green.png");
+						orders2deliver[v._id].setIcon("/backoffice/assets/pins/home-green.png");
 						$("#orders2deliver ."+v._id).find("span.ticket-label").removeClass("label-default").addClass("label-success").text("Em rota");;
 					} else {
-						orders2deliver[v._id].setIcon("/studio/assets/pins/home-blue.png");
+						orders2deliver[v._id].setIcon("/backoffice/assets/pins/home-blue.png");
 					}
 				}
 			});
@@ -48,12 +48,12 @@ init.push(function () {
 	new google.maps.Marker({
 			position: new google.maps.LatLng(-30.102255, -51.231373), // Av. Otto Niemeyer, 2955 ... -30.102255, -51.231373
 			map: map,
-			icon: "/studio/assets/pins/panvel.png"
+			icon: "/backoffice/assets/pins/panvel.png"
 	});
 	new google.maps.Marker({
 			position: new google.maps.LatLng(-30.026863, -51.190117), // R. Anita Garibaldi, 600 ... -30.026863, -51.190117
 			map: map,
-			icon: "/studio/assets/pins/panvel.png"
+			icon: "/backoffice/assets/pins/panvel.png"
 	});
 
 	$.getJSON("/users/list/all")
@@ -69,7 +69,7 @@ init.push(function () {
 								position: taskLatLng,
 								map: map,
 								animation: google.maps.Animation.DROP,
-								icon: "/studio/assets/pins/home-blue.png"
+								icon: "/backoffice/assets/pins/home-blue.png"
 							});
 
 							var $content = $("<div>")
@@ -140,7 +140,7 @@ init.push(function () {
 			$t.removeClass("btn-warning").addClass("btn-success");
 			$("#orders2deliver span.ticket-label").addClass("label-default").removeClass("label-success").text("Expedido");
 			$.each(orders2deliver, function(i,v){
-				v.setIcon("/studio/assets/pins/home-blue.png");
+				v.setIcon("/backoffice/assets/pins/home-blue.png");
 			});
 		})
 		.fail(function(){

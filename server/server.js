@@ -36,7 +36,7 @@ router.loadAPI('/app/nbapi/routes');
 
 
 // publishing studio
-router.app.use('/studio', require('express').static(__dirname + "/public"));
+router.app.use('/backoffice', require('express').static(__dirname + "/public"));
 router.app.use('/cordova', require('express').static(__dirname + "/../mobile/cordova/src"));
 
 
@@ -50,7 +50,7 @@ try {
     logger.fatal(e);
 } finally {
     // exporting app to node context
-    exports = module.exports = router.app;    
+    exports = module.exports = router.app;
 }
 
 
