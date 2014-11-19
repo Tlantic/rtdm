@@ -18,6 +18,8 @@
 	<link href="assets/stylesheets/rtl.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/stylesheets/themes.min.css" rel="stylesheet" type="text/css">
 
+	<link href="css/poc.css" rel="stylesheet" type="text/css">
+
 	<!--[if lt IE 9]>
 		<script src="assets/javascripts/ie.min.js"></script>
 	<![endif]-->
@@ -140,6 +142,36 @@
 				<li>
 					<a href="entregas.html"><i class="menu-icon fa fa-map-marker"></i><span class="mm-text">Monitoramento Online</span><span class="label label-success">3</span></a>
 				</li>
+				<li class="mm-dropdown" id="fake-gps">
+					<a href="#"><i class="menu-icon fa fa-location-arrow"></i><span class="mm-text">Simulador GPS</span></a>
+					<ul>
+						<li class="mm-dropdown">
+							<a tabindex="-1" href="#"><span class="mm-text">Entrega na Gomes Jardim</span></a>
+							<ul>
+								<li>
+									<a tabindex="-1" href="#" class="fake-coord" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.047600" data-lng="-51.208245"><span class="mm-text">coord 1</span></a>
+									<a tabindex="-1" href="#" class="fake-coord" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.046694" data-lng="-51.207545"><span class="mm-text">coord 2</span></a>
+									<a tabindex="-1" href="#" class="fake-coord" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.046471" data-lng="-51.207250"><span class="mm-text">coord 3</span></a>
+									<a tabindex="-1" href="#" class="fake-coord" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.045766" data-lng="-51.207647"><span class="mm-text">coord 4</span></a>
+								</li>
+							</ul>
+						</li>
+						<li class="mm-dropdown">
+							<a tabindex="-1" href="#"><span class="mm-text">Entrega na Guilherme Alves</span></a>
+							<ul>
+								<li>
+									<a tabindex="-1" href="#" class="fake-coord" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.055797" data-lng="-51.187861"><span class="mm-text">coord 1</span></a>
+									<a tabindex="-1" href="#" class="fake-coord" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.055516" data-lng="-51.188408"><span class="mm-text">coord 2</span></a>
+									<a tabindex="-1" href="#" class="fake-coord" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.054321" data-lng="-51.187864"><span class="mm-text">coord 3</span></a>
+									<a tabindex="-1" href="#" class="fake-coord" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.053480" data-lng="-51.187392"><span class="mm-text">coord 4</span></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a tabindex="-1" href="#" id="reset-tasks">Restaurar situação de todas entregas</a>
+						</li>
+					</ul>
+				</li>
 			</ul> <!-- / .navigation -->
 		</div> <!-- / #main-menu-inner -->
 	</div> <!-- / #main-menu -->
@@ -188,29 +220,7 @@
 						<span class="panel-title"><i class="panel-title-icon fa fa-location-arrow"></i><strong>Simulador</strong> de GPS do entregador</span>
 					</div> <!-- / .panel-heading -->
 					<div class="panel-body tab-content-padding">
-						<div class="panel-padding no-padding-vr">
-							<div class="btn-toolbar" role="toolbar" id="fake-gps">
-								<div class="btn-group">
-								<div>Entrega na Guilherme Alves</div>
-									<button type="button" class="btn" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.055797" data-lng="-51.187861">coord 1</button>
-									<button type="button" class="btn" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.055516" data-lng="-51.188408">coord 2</button>
-									<button type="button" class="btn" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.054321" data-lng="-51.187864">coord 3</button>
-									<button type="button" class="btn" data-taskid="54624cf2c7a4804c068589cc" data-lat="-30.053480" data-lng="-51.187392">coord 4</button>
-								</div>
-							</div>
-							<br>
-							<div class="btn-toolbar" role="toolbar" id="fake-gps">
-								<div class="btn-group">
-								<div>Entrega na Gomes Jardim</div>
-									<button type="button" class="btn" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.047600" data-lng="-51.208245">coord 1</button>
-									<button type="button" class="btn" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.046694" data-lng="-51.207545">coord 2</button>
-									<button type="button" class="btn" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.046471" data-lng="-51.207250">coord 3</button>
-									<button type="button" class="btn" data-taskid="54624cd4c7a4804c068589cb" data-lat="-30.045766" data-lng="-51.207647">coord 4</button>
-								</div>
-							</div>
-							<br>
-							<button type="button" class="btn" id="reset-tasks">Restaurar situação de todas entregas</button>
-						</div>
+
 					</div> <!-- / .panel-body -->
 				</div>
 			</div>

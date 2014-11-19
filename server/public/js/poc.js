@@ -5,7 +5,6 @@ var map,
 		streetViewControl: false,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	},
-	infowindow,
 	markers = [],
 	orders2deliver = [];
 	// Cor 5BC0DE expedição
@@ -21,6 +20,7 @@ function refreshDashboard() {
 			$.each(data.result, function(i,v){
 				if (v.lastUpdate) {
 					var newLatLng = new google.maps.LatLng(v.lastUpdate.lat,v.lastUpdate.lon);
+
 					if (markers[v._id]) {
 						markers[v._id].setPosition(newLatLng);
 					} else {
@@ -69,12 +69,20 @@ init.push(function () {
 								position: taskLatLng,
 								map: map,
 								animation: google.maps.Animation.DROP,
-								icon: "/studio/assets/pins/home-blue.png",
-								title: vv.address
+								icon: "/studio/assets/pins/home-blue.png"
 							});
 
+							var $content = $("<div>")
+								.append( $("<div>").append($("<strong>").text(vv.description)) )
+								.append( $("<div>").text(vv.address) )
+								.append( $("<div>").html('EST: <span class="label label-success" title="Estimativa de entrega">HH:MM</span><br>LIM: <span class="label label-primary" title="Horário limite">HH:MM</span>') );
 							var infowindow = new google.maps.InfoWindow({
-								content: 'infowindow contentString'
+								content: $content.html(),
+								maxWidth: 300
+							});
+
+							google.maps.event.addListener(orders2deliver[vv._id], 'click', function() {
+								infowindow.open(map,orders2deliver[vv._id]);
 							});
 
 							$t1 = $("<span>").addClass("label label-default ticket-label").text("Expedido");
@@ -104,7 +112,7 @@ init.push(function () {
 
 	setInterval(refreshDashboard, 5000);
 
-	$("#fake-gps button").click(function(e){
+	$("#fake-gps a.fake-coord").click(function(e){
 		var $t = $(e.target);
 		$t.removeClass("btn-success").removeClass("btn-danger").addClass("btn-warning");
 		var data = {
