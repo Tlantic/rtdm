@@ -1,6 +1,10 @@
 var rtdmmaControllers = angular.module('rtdmmaControllers', []);
 
-rtdmmaControllers.controller('UserListCtrl', function ($scope, User){
+rtdmmaControllers.
+controller('MainCtrl', function ($scope){
+    
+})
+.controller('UserListCtrl', function ($scope, User){
     'use strict';
     
     User.query(function(data) {
@@ -17,16 +21,6 @@ rtdmmaControllers.controller('UserListCtrl', function ($scope, User){
 .controller('TaskCtrl', function($scope, $routeParams, $location, Tasks) {
     'use strict';
     $scope.showFinishAndCancelButtons = false;
-    
-    function getTaskDetail ($scope.taskId) {
-        var tasks = localStorage.getItem ('tasks');
-        if (tasks != undefined) {
-            tasks = JSON.parse (tasks);
-            $scope.task = tasks.result.filter (function (data) {
-                return data._id == $routeParams.taskId; 
-            })[0];
-        }
-    }    
     
     $scope.startTask = function () {
         Tasks.query ({id : $routeParams.taskId}, function(data) {
@@ -72,6 +66,7 @@ rtdmmaControllers.controller('UserListCtrl', function ($scope, User){
     }  
     
     function onGeolocationSuccess(position) {
+        console.log(position);
         $scope.task.startedAt = new Date();
         Tasks.save($scope.task); 
         $scope.showFinishAndCancelButtons = true;
@@ -88,9 +83,12 @@ rtdmmaControllers.controller('UserListCtrl', function ($scope, User){
             "lat" : position.coords.latitude,
             "lon" : position.coords.longitude
         };
+        
+        Task.save($scope.task);
+        console.log(task);
     }
 
     function onGeoLocationError(error) {
-        
+        console.lo(error);
     }
 });

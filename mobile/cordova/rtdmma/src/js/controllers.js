@@ -1,6 +1,10 @@
 var rtdmmaControllers = angular.module('rtdmmaControllers', []);
 
-rtdmmaControllers.controller('UserListCtrl', function ($scope, User){
+rtdmmaControllers.
+controller('MainCtrl', function ($scope){
+    
+})
+.controller('UserListCtrl', function ($scope, User){
     'use strict';
     
     User.query(function(data) {

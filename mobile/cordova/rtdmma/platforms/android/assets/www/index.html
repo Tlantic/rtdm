@@ -11,7 +11,7 @@
             var RunApp = function(){
                 window.location = "/users";
             };
-            if (windows.client.mobile) {
+            if (window.client.mobile) {
                document.addEventListener("deviceready", RunApp, false); 
             } else {
                RunApp(); 
