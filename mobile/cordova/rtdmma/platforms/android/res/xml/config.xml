@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.tlantic.rtdmma" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <name>RTDM-MA</name>
+    <description>
+        RTDM Mobile Application
+    </description>
+    <author email="" href="http://www.tlantic.com.br">
+        Tlantic RTDM Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+</widget>
