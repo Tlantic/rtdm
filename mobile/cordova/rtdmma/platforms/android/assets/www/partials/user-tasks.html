@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span10">
+      <!--Body content-->
+
+      <ul class="users">
+        <li ng-repeat="task in tasks.result | orderBy:createdAt" 
+            class="task-list btn">
+          <a href="#/task/{{task._id}}">{{task.description}}:&nbsp;{{task.address}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
