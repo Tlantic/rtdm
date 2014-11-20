@@ -1,21 +1,12 @@
-<!doctype html>
-<html lang="pt-br" ng-app="rtdmma">
-    <head>
-        <meta charset="utf-8">
-        <title>RTDM-MA</title>
-        <script src="lib/tlantic-clientdetector/client-detector.js"></script>
-        <script src="js/cordova.js"></script>
-    </head>
-    <body>   
-        <script>
-            var RunApp = function(){
-                window.location = "/users";
-            };
-            if (window.client.mobile) {
-               document.addEventListener("deviceready", RunApp, false); 
-            } else {
-               RunApp(); 
-            }
-        </script>
-    </body>
-</html>
+<script src="lib/tlantic-clientdetector/client-detector.js"></script>
+<script src="js/cordova.js"></script>
+<script>
+    var RunApp = function(){
+        window.location = "partials/index.html";
+    };
+    if (window.client.mobile) {
+       document.addEventListener("deviceready", RunApp, false); 
+    } else {
+       RunApp(); 
+    }
+</script>

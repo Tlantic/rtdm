@@ -1,6 +1,10 @@
 var rtdmmaControllers = angular.module('rtdmmaControllers', []);
 
-rtdmmaControllers.controller('UserListCtrl', function ($scope, User){
+rtdmmaControllers.
+controller('MainCtrl', function ($scope){
+    
+})
+.controller('UserListCtrl', function ($scope, User){
     'use strict';
     
     User.query(function(data) {
@@ -17,61 +21,63 @@ rtdmmaControllers.controller('UserListCtrl', function ($scope, User){
 .controller('TaskCtrl', function($scope, $routeParams, $location, Tasks) {
     'use strict';
     $scope.showFinishAndCancelButtons = false;
+    getDetail();
     
-    function getTaskDetail ($scope.taskId) {
-        var tasks = localStorage.getItem ('tasks');
-        if (tasks != undefined) {
-            tasks = JSON.parse (tasks);
-            $scope.task = tasks.result.filter (function (data) {
-                return data._id == $routeParams.taskId; 
-            })[0];
-        }
-    }    
-    
-    $scope.startTask = function () {
-        Tasks.query ({id : $routeParams.taskId}, function(data) {
+    function getDetail() {
+        Tasks.get ({id : $routeParams.taskId}, function(data) {
             $scope.task = data;
         });  
-        $scope.task.startedAt = new Date();
-        Tasks.save($scope.task); 
+    }
+    
+    $scope.startTask = function () {
+        Tasks.get ({id : $routeParams.taskId}, function(data) {
+            $scope.task = data;
+            $scope.task.startedAt = new Date();
+            Tasks.save($scope.task); 
+        });  
         $scope.showFinishAndCancelButtons = true;
         localStorage.removeItem('taskId');
         localStorage.setItem("taskId", JSON.stringify($routeParams.taskId));
-        
+        /*
         var watchId = navigator.geolocation.watchPosition (onGeolocationSuccess,onGeoLocationError], { maximumAge: 3000, timeout: 5000, enableHighAccuracy: true });
         localStorage.removeItem('watchId');
         localStorage.setItem("watchId", JSON.stringify(watchId));
+        */
     }
     
     $scope.cancelTask = function() {
-        Task.query ({id : $routeParams.taskId}, function(data) {
+        Tasks.get ({id : $routeParams.taskId}, function(data) {
             $scope.task = data;
+            $scope.task.startedAt = null;
+            Tasks.save($scope.task);
         });  
-        Tasks.save($scope.task);
         $scope.showFinishAndCancelButtons = false;
         var watchId = localStorage.getItem ('watchId');
         if (watchId != undefined) {
             watchId = JSON.parse (watchId);
         }
-        navigator.geolocation.clearWatch(watchId);        
+        //navigator.geolocation.clearWatch(watchId);        
         $location.path('/user/' + $scope.task.owner);        
     }
     
     $scope.finishTask = function () {
         $scope.task.finishedAt = new Date();
-        Tasks.query ({id : $routeParams.taskId}, function(data) {
+        Tasks.get ({id : $routeParams.taskId}, function(data) {
             $scope.task = data;
+            $scope.task.finishedAt = new Date();
+            Tasks.save($scope.task); 
         });  
         $scope.showFinishAndCancelButtons = false;
         var watchId = localStorage.getItem ('watchId');
         if (watchId != undefined) {
             watchId = JSON.parse (watchId);
         }
-        navigator.geolocation.clearWatch(watchId);        
+        //navigator.geolocation.clearWatch(watchId);        
         $location.path('/user/' + $scope.task.owner);
     }  
     
     function onGeolocationSuccess(position) {
+        console.log(position);
         $scope.task.startedAt = new Date();
         Tasks.save($scope.task); 
         $scope.showFinishAndCancelButtons = true;
@@ -88,9 +94,12 @@ rtdmmaControllers.controller('UserListCtrl', function ($scope, User){
             "lat" : position.coords.latitude,
             "lon" : position.coords.longitude
         };
+        
+        Task.save($scope.task);
+        console.log(task);
     }
 
     function onGeoLocationError(error) {
-        
+        console.lo(error);
     }
 });
