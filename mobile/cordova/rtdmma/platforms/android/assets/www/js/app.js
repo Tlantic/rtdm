@@ -2,7 +2,7 @@
 
 /* App Module */
 
-var rtdmma = angular.module('rtdmma', ['ngRoute','ngResource','ngTouch','rtdmmaFilters', 'rtdmmaServices','rtdmmaAnimations','rtdmmaControllers']);
+var rtdmma = angular.module('rtdmma', ['ngRoute','ngResource','ngTouch','cordovaGeolocationModule','rtdmmaFilters', 'rtdmmaServices','rtdmmaAnimations','rtdmmaControllers']);
 
 rtdmma.
 config(['$routeProvider', function($routeProvider) {
@@ -12,4 +12,5 @@ config(['$routeProvider', function($routeProvider) {
       when ('/task/:taskId', {templateUrl: 'task-detail.html', controller: 'TaskCtrl'}).
       otherwise({redirectTo: '/users'});
     
+
 }]);

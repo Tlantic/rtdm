@@ -18,88 +18,102 @@ controller('MainCtrl', function ($scope){
         $scope.tasks = data;        
     });
 })
-.controller('TaskCtrl', function($scope, $routeParams, $location, Tasks) {
+.controller('TaskCtrl', function($scope, $routeParams, $location, Tasks, TaskPost, cordovaGeolocationService) {
     'use strict';
     $scope.showFinishAndCancelButtons = false;
+    $scope.firedFinishButton = false;
+    $scope.TaskPost = TaskPost;
     getDetail();
     
+    // Get Task Detail to Bind Items
     function getDetail() {
-        Tasks.get ({id : $routeParams.taskId}, function(data) {
+        Tasks.get({id: $routeParams.taskId}, function(data) {
             $scope.task = data;
         });  
     }
     
+    // Event Fired By Start Button
     $scope.startTask = function () {
-        Tasks.get ({id : $routeParams.taskId}, function(data) {
-            $scope.task = data;
-            $scope.task.startedAt = new Date();
-            Tasks.save($scope.task); 
-        });  
+        var task = Tasks.get({id: $routeParams.taskId}, function() {
+            $scope.task = task;
+            $scope.firedFinishButton = false;
+            $scope.interval = setInterval($scope.updateTask(null, null), 10000);
+        });
         $scope.showFinishAndCancelButtons = true;
         localStorage.removeItem('taskId');
         localStorage.setItem("taskId", JSON.stringify($routeParams.taskId));
-        /*
-        var watchId = navigator.geolocation.watchPosition (onGeolocationSuccess,onGeoLocationError], { maximumAge: 3000, timeout: 5000, enableHighAccuracy: true });
-        localStorage.removeItem('watchId');
-        localStorage.setItem("watchId", JSON.stringify(watchId));
-        */
+        $scope.startWatchingPosition();
     }
     
+    // Event Fired by Cancel Button
     $scope.cancelTask = function() {
-        Tasks.get ({id : $routeParams.taskId}, function(data) {
+        $scope.firedFinishButton = false;
+        $scope.Task.$get({id: $routeParams.taskId}, function(data) {
             $scope.task = data;
-            $scope.task.startedAt = null;
-            Tasks.save($scope.task);
-        });  
+            Tasks.$delete({id: task._id});
+            clearInterval($scope.interval)
+            $scope.stopWatching();
+        });
         $scope.showFinishAndCancelButtons = false;
-        var watchId = localStorage.getItem ('watchId');
-        if (watchId != undefined) {
-            watchId = JSON.parse (watchId);
-        }
-        //navigator.geolocation.clearWatch(watchId);        
         $location.path('/user/' + $scope.task.owner);        
     }
     
-    $scope.finishTask = function () {
-        $scope.task.finishedAt = new Date();
-        Tasks.get ({id : $routeParams.taskId}, function(data) {
+    // Event Fired by Finish Button
+    $scope.finishTaskWithSuccess = function () {
+        $scope.Task.$get({id: $routeParams.taskId}, function(data) {
+            $scope.firedFinishButton = true;
             $scope.task = data;
-            $scope.task.finishedAt = new Date();
-            Tasks.save($scope.task); 
+            $scope.updateTask(1, ''); // Finish Task With Success.
+            clearInterval($scope.interval);
+            $scope.stopWatchingPosition();
         });  
         $scope.showFinishAndCancelButtons = false;
-        var watchId = localStorage.getItem ('watchId');
-        if (watchId != undefined) {
-            watchId = JSON.parse (watchId);
-        }
-        //navigator.geolocation.clearWatch(watchId);        
         $location.path('/user/' + $scope.task.owner);
-    }  
+    }
     
-    function onGeolocationSuccess(position) {
-        console.log(position);
-        $scope.task.startedAt = new Date();
-        Tasks.save($scope.task); 
-        $scope.showFinishAndCancelButtons = true;
-        var taskId = localStorage.getItem ('taskId');
-        if (taskId != undefined) {
-            taskId = JSON.parse (taskId);
-        }
-        
-        Tasks.query ({id : taskId}, function(data) {
+    // Event Fired by Finish With Failure Button
+    $scope.finishTaskWithFailure = function (reason) {
+        $scope.Task.$get({id: $routeParams.taskId}, function(data) {
+            $scope.firedFinishButton = true;
             $scope.task = data;
-        });
-        
-        task.lastCoords = {
-            "lat" : position.coords.latitude,
-            "lon" : position.coords.longitude
-        };
-        
-        Task.save($scope.task);
-        console.log(task);
+            $scope.updateTask(0, 'Cliente n&atilde;o encontrado'); 
+            clearInterval($scope.interval);
+            $scope.stopWatchingPosition();
+        });  
+        $scope.showFinishAndCancelButtons = false;
+        $location.path('/user/' + $scope.task.owner);
     }
-
-    function onGeoLocationError(error) {
-        console.lo(error);
-    }
+    
+    // Get Current Position
+    $scope.getCurrentPosition = function () {
+        cordovaGeolocationService.getCurrentPosition(successHandler);
+    };
+    
+    // start Watching Geolocalization
+    $scope.startWatchingPosition = function () {
+        $scope.watchId = cordovaGeolocationService.watchPosition(successHandler);
+    };
+    
+    // Stop Watching Geolocalization 
+    $scope.stopWatchingPosition = function () {
+        cordovaGeolocationService.clearWatch($scope.watchId);
+        $scope.watchId = null;
+        $scope.currentPosition = null;
+    };
+    
+    // Update Task on API
+    $scope.updateTask = function (finished, failureReason) {
+        $scope.getCurrentPosition();
+        var position = $scope.currentPosition;
+        if (finish != null) {
+            TaskPost.updatTask($scope.task._id, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}, finished: finished, failureReason: failureReason}); 
+        } else {
+            TaskPost.updatTask($scope.task._id, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}});
+        }
+    };
+    
+    // Success Handler
+    var successHandler = function (position) {
+        $scope.currentPosition = position;
+    };
 });
