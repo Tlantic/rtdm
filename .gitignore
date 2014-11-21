@@ -2,5 +2,6 @@
 /server/public/log/
 /server/public/html/
 /mobile/node_modules/
-mobile/cordova/node_modules/.bin/r.js.cmd
-mobile/cordova/node_modules/.bin/r.js
+/mobile/cordova/node_modules/.bin/r.js.cmd
+/mobile/cordova/node_modules/.bin/r.js
+/mobile/cordova/rtdmma/platforms
