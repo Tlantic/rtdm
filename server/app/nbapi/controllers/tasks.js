@@ -65,19 +65,23 @@ exports.create = function (req, res) {
  */
 exports.update = function (req, res) {
     var task = req.loadedTask;
-
-    // task = _.extend(task, req.body);
-    if (task.startedAt==null || task.startedAt==undefined) {
-        task.startedAt = Date.now();
-    }
-    task = _.extend(task, {
-        lastUpdate: {
-            timestamp: Date.now(),
-            lat: req.body.lastCoords.lat,
-            lon: req.body.lastCoords.lon
+    task = _.extend(task, req.body);
+    if (req.body.finished===undefined) {
+        if (task.startedAt===null || task.startedAt===undefined) {
+            task.startedAt = Date.now();
         }
-    });
-
+        task.lastUpdate.timestamp = Date.now();
+        task.lastUpdate.lat = req.body.lastCoords.lat;
+        task.lastUpdate.lon = req.body.lastCoords.lon;
+    } else {
+        task.finishedAt = Date.now();
+        if (req.body.finished==1) {
+            task.failureReason = null;
+        }
+        console.log("task.failureReason = "+task.failureReason);
+        console.log(req.body);
+        // console.log(req);
+    }
     task.save(function (err) {
         res.json( mBuilder.buildQuickResponse(err, 'Unexpected error updating task.', task) );
     });
@@ -92,10 +96,12 @@ exports.listAll = function (req, res) {
 exports.resetAll = function (req, res) {
     Task.find({}, function(err, tasks) {
         _.each(tasks, function(t) {
+            t.lastUpdate.timestamp = null;
             t.lastUpdate.lat = null;
             t.lastUpdate.lon = null;
             t.startedAt = null;
             t.finishedAt = null;
+            t.failureReason = null;
             t.save();
         });
         return res.json( mBuilder.buildQuickResponse(err, 'Error nullifying tasks!', true) );
