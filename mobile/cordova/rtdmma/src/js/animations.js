@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('rtdmmaAnimations',['ngAnimate'])
+angular.module('rtdmmaAnimations',[])
 .animation('.user', function() {
     return {
         addClass: function(element, className, done) {
