@@ -2,7 +2,7 @@
 
 /* App Module */
 
-var rtdmma = angular.module('rtdmma', ['ngRoute','ngResource','ngTouch','rtdmmaFilters', 'rtdmmaServices','rtdmmaAnimations','rtdmmaControllers']);
+var rtdmma = angular.module('rtdmma', ['ngRoute','ngResource','ngTouch','rtdmmaFilters', 'rtdmmaServices','rtdmmaControllers']);
 
 rtdmma.
 config(['$routeProvider', function($routeProvider) {

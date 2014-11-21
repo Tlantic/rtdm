@@ -18,12 +18,13 @@ controller('MainCtrl', function ($scope){
         $scope.tasks = data;        
     });
 })
-.controller('TaskCtrl', function($scope, $rootScope, $routeParams, $location, Tasks, TaskPost) {
+.controller('TaskCtrl', function($scope, $rootScope, $routeParams, $location, Tasks, TaskPost, $interval) {
     'use strict';
     $scope.showFinishAndCancelButtons = false;
     $scope.firedFinishButton = false;
-    $rootScope.TaskPost = TaskPost;
+    $scope.TaskPost = TaskPost;
     getDetail();
+    var stopInterval;
     
     // Get Task Detail to Bind Items
     function getDetail() {
@@ -36,9 +37,16 @@ controller('MainCtrl', function ($scope){
     $scope.startTask = function () {
         var task = Tasks.get({id: $routeParams.taskId}, function() {
             $scope.task = task;
+            $scope.finished = null;
+            $scope.failureReason = null;
+            $scope.taskId = task._id;
             $scope.firedFinishButton = false;
-            $scope.interval = setInterval($rootScope.getCurrentPosition();
-            , 5000);
+            $scope.getCurrentPosition();
+            if (!angular.isDefined(stopInterval)) {
+                stopInterval = $interval(function() {
+                    $scope.getCurrentPosition();
+                }, 10000);
+            }
         });
         $scope.showFinishAndCancelButtons = true;
         localStorage.removeItem('taskId');
@@ -51,20 +59,28 @@ controller('MainCtrl', function ($scope){
         var task = Tasks.get({id: $routeParams.taskId}, function(data) {
             $scope.task = data;
             Tasks.$delete({id: task._id});
-            clearInterval($scope.interval)
+            $scope.cancelInterval();
         });
         $scope.showFinishAndCancelButtons = false;
         $location.path('/user/' + $scope.task.owner);        
     }
+    
+    $scope.cancelInterval = function() {
+        if (angular.isDefined(stopInterval)) {
+            $interval.cancel(stopInterval);
+            stopInterval = undefined;
+        }
+    };
     
     // Event Fired by Finish Button
     $scope.finishTaskWithSuccess = function () {
         Tasks.get({id: $routeParams.taskId}, function(data) {
             $scope.firedFinishButton = true;
             $scope.task = data;
-            $rootScope.finished = 1;
-            $rootScope.failureReason = '';
-            $rootScope.getCurrentPosition();
+            $scope.finished = 1;
+            $scope.failureReason = '';
+            $scope.getCurrentPosition();
+            $scope.cancelInterval();
         });  
         $scope.showFinishAndCancelButtons = false;
         $location.path('/user/' + $scope.task.owner);
@@ -76,22 +92,22 @@ controller('MainCtrl', function ($scope){
         Tasks.get({id: $routeParams.taskId}, function(data) {
             $scope.firedFinishButton = true;
             $scope.task = data;
-            $rootScope.finished = 0;
-            $rootScope.failureReason = 'Cliente n&atilde;o encontrado.';
-            $rootScope.getCurrentPosition();
-            clearInterval($scope.interval);
+            $scope.finished = 0;
+            $scope.failureReason = 'Cliente n&atilde;o encontrado.';
+            $scope.getCurrentPosition();
+            $scope.cancelInterval();
         });  
         $scope.showFinishAndCancelButtons = false;
         $location.path('/user/' + $scope.task.owner);
     }
     
     // Get Current Position
-    $rootScope.getCurrentPosition = function () {
+    $scope.getCurrentPosition = function () {
         navigator.geolocation.getCurrentPosition(onGeolocationSuccess, onGeolocationError, {timeout: 5000, enableHighAccuracy: true});
     };
     
     var onGeolocationSuccess = function(position) {
-    $rootScope.currentPosition = position;
+    $scope.currentPosition = position;
     console.log(
            'Latitude: '          + position.coords.latitude          + '\n' +
           'Longitude: '         + position.coords.longitude         + '\n' +
@@ -101,10 +117,12 @@ controller('MainCtrl', function ($scope){
           'Heading: '           + position.coords.heading           + '\n' +
           'Speed: '             + position.coords.speed             + '\n' +
           'Timestamp: '         + position.timestamp                + '\n');
+        
+        $scope.updateTask();
+
 	};
     
-    $rootScope.updateTask();
-
+    
 	// onError Callback receives a PositionError object
 	//
 	function onGeolocationError(error) {
@@ -114,16 +132,16 @@ controller('MainCtrl', function ($scope){
 
     
     // Update Task on API
-    $rootScope.updateTask = function () {
-    	var finished = $rootScope.finished;
-    	var failureReason = $rootScope.failureReason;
-        console.log ('updateTask: ' + $rootScope.currentPosition);
-        if ($rootScope.currentPosition != undefined) {
-        	var position = $rootScope.currentPosition;
+    $scope.updateTask = function () {
+    	var finished = $scope.finished;
+    	var failureReason = $scope.failureReason;
+        console.log ('updateTask: ' + $scope.currentPosition);
+        if ($scope.currentPosition != undefined) {
+        	var position = $scope.currentPosition;
             if (finished != null) {
-                $rootScope.TaskPost.updatTask($scope.task._id, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}, finished: finished, failureReason: failureReason}); 
+                $scope.TaskPost.updateTask($scope.taskId, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}, finished: finished, failureReason: failureReason}); 
             } else {
-                $rootScope.TaskPost.updatTask($scope.task._id, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}});
+                $scope.TaskPost.updateTask($scope.taskId, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}});
             }
         }
     };

@@ -2,7 +2,6 @@
 <html lang="pt-br" ng-app="rtdmma">
     <head>
         <meta charset="utf-8">
-        
         <title>RTDM-MA</title>
         <link rel="stylesheet" href="../css/app.css">
         <link rel="stylesheet" href="../css/bootstrap.css">        
@@ -21,6 +20,9 @@
         </style>
     </head>
     <body>
+        <div class="view-container" ng-controller="MainCtrl">
+            <div ng-view class="view-frame"> </div>
+        </div>
         
         
         <script src="../lib/angular/angular.js"></script>
@@ -34,12 +36,7 @@
         <script src="../js/filters.js"></script>
         <script src="../js/directives.js"></script>
         <script src="../js/services.js"></script>
-        <script src="../js/animations.js"></script>
         <script src="../js/controllers.js"></script>
-        
-        <div class="view-container" ng-controller="MainCtrl">
-            <div ng-view class="view-frame"> </div>
-        </div>
         
         <script type="text/javascript" src="../cordova.js"></script>
         

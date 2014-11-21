@@ -22,9 +22,9 @@
     <feature name="Vibration">
         <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
     </feature>
-    <name>Tlantic Real Time Deliver Manager</name>
+    <name>Tlantic Realtime Delivery Management</name>
     <description>
-        Tlantic Real Time Deliver Manager Mobile Application
+        Tlantic Realtime Delivery Management Mobile Application
     </description>
     <author email="tlantic@tlantic.com.br" href="http://www.tlantic.com.br">
         Tlantic RTDM Team
