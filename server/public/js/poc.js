@@ -131,6 +131,37 @@ init.push(function () {
 		});
 	});
 
+	$("#fake-gps a.fake-finish-success").click(function(e){
+		var $t = $(e.target);
+		var data = {
+				finished: 1
+			};
+
+		$.post("/tasks/"+$t.data("taskid"), data)
+		.done(function(){
+			$t.removeClass("btn-warning").addClass("btn-success");
+		})
+		.fail(function(){
+			$t.removeClass("btn-warning").addClass("btn-danger");
+		});
+	});
+
+	$("#fake-gps a.fake-finish-failure").click(function(e){
+		var $t = $(e.target);
+		var data = {
+				finished: 0,
+				failureReson: "Falhou via fake-GPS"
+			};
+
+		$.post("/tasks/"+$t.data("taskid"), data)
+		.done(function(){
+			$t.removeClass("btn-warning").addClass("btn-success");
+		})
+		.fail(function(){
+			$t.removeClass("btn-warning").addClass("btn-danger");
+		});
+	});
+
 	$("#reset-tasks").click(function(e){
 		var $t = $(e.target);
 		$t.removeClass("btn-success").removeClass("btn-danger").addClass("btn-warning");
