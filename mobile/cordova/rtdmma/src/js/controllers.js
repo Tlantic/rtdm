@@ -36,19 +36,20 @@ controller('MainCtrl', function ($scope){
     $scope.startTask = function () {
         var task = Tasks.get({id: $routeParams.taskId}, function() {
             $scope.task = task;
+            $scope.startWatchingPosition();
+            $scope.getCurrentPosition();
             $scope.firedFinishButton = false;
             $scope.interval = setInterval($scope.updateTask(null, null), 10000);
         });
         $scope.showFinishAndCancelButtons = true;
         localStorage.removeItem('taskId');
         localStorage.setItem("taskId", JSON.stringify($routeParams.taskId));
-        $scope.startWatchingPosition();
     }
     
     // Event Fired by Cancel Button
     $scope.cancelTask = function() {
         $scope.firedFinishButton = false;
-        $scope.Task.$get({id: $routeParams.taskId}, function(data) {
+        Tasks.get({id: $routeParams.taskId}, function(data) {
             $scope.task = data;
             Tasks.$delete({id: task._id});
             clearInterval($scope.interval)
@@ -60,7 +61,7 @@ controller('MainCtrl', function ($scope){
     
     // Event Fired by Finish Button
     $scope.finishTaskWithSuccess = function () {
-        $scope.Task.$get({id: $routeParams.taskId}, function(data) {
+        Tasks.get({id: $routeParams.taskId}, function(data) {
             $scope.firedFinishButton = true;
             $scope.task = data;
             $scope.updateTask(1, ''); // Finish Task With Success.
@@ -73,7 +74,7 @@ controller('MainCtrl', function ($scope){
     
     // Event Fired by Finish With Failure Button
     $scope.finishTaskWithFailure = function (reason) {
-        $scope.Task.$get({id: $routeParams.taskId}, function(data) {
+        Tasks.get({id: $routeParams.taskId}, function(data) {
             $scope.firedFinishButton = true;
             $scope.task = data;
             $scope.updateTask(0, 'Cliente n&atilde;o encontrado'); 
@@ -86,8 +87,28 @@ controller('MainCtrl', function ($scope){
     
     // Get Current Position
     $scope.getCurrentPosition = function () {
+        navigator.geolocation.getCurrentPosition(onGeolocationSuccess, onGeolocationError, {timeout: 10000, enableHighAccuracy: true});
         cordovaGeolocationService.getCurrentPosition(successHandler);
     };
+    
+    var onGeolocationSuccess = function(position) {
+    alert('Latitude: '          + position.coords.latitude          + '\n' +
+          'Longitude: '         + position.coords.longitude         + '\n' +
+          'Altitude: '          + position.coords.altitude          + '\n' +
+          'Accuracy: '          + position.coords.accuracy          + '\n' +
+          'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+          'Heading: '           + position.coords.heading           + '\n' +
+          'Speed: '             + position.coords.speed             + '\n' +
+          'Timestamp: '         + position.timestamp                + '\n');
+};
+
+// onError Callback receives a PositionError object
+//
+function onGeolocationError(error) {
+    alert('code: '    + error.code    + '\n' +
+          'message: ' + error.message + '\n');
+}
+
     
     // start Watching Geolocalization
     $scope.startWatchingPosition = function () {
@@ -105,10 +126,12 @@ controller('MainCtrl', function ($scope){
     $scope.updateTask = function (finished, failureReason) {
         $scope.getCurrentPosition();
         var position = $scope.currentPosition;
-        if (finish != null) {
-            TaskPost.updatTask($scope.task._id, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}, finished: finished, failureReason: failureReason}); 
-        } else {
-            TaskPost.updatTask($scope.task._id, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}});
+        if (position != undefined) {
+            if (finished != null) {
+                $scope.TaskPost.updatTask($scope.task._id, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}, finished: finished, failureReason: failureReason}); 
+            } else {
+                $scope.TaskPost.updatTask($scope.task._id, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}});
+            }
         }
     };
     
