@@ -150,7 +150,7 @@ init.push(function () {
 		var $t = $(e.target);
 		var data = {
 				finished: 0,
-				failureReson: "Falhou via fake-GPS"
+				failureReason: "Falhou via fake-GPS"
 			};
 
 		$.post("/tasks/"+$t.data("taskid"), data)
