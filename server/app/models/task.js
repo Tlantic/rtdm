@@ -15,11 +15,12 @@ var TaskSchema = new Schema({
     owner: {
         type: Schema.Types.ObjectId,
         ref: 'User'
-    },    
+    },
     description: String,
     createdAt:  { type: Date, default: Date.now },
     startedAt: Date,
     finishedAt: Date,
+    failureReason: String,
     address: String,
     coords: {
         lat: String,
