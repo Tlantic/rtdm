@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+  <testsuite>
+<testcase classname="server" name="server:39:53">
+  <failure message="Unexpected dangling '_' in '__dirname'." />
+</testcase>
+<testcase classname="server" name="server:39:53">
+  <failure message="'__dirname' was used before it was defined." />
+</testcase>
+<testcase classname="server" name="server:52:46">
+  <failure message="Unexpected character '(space)'." />
+</testcase>
+  </testsuite>
+</testsuites>
