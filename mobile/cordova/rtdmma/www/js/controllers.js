@@ -4,21 +4,40 @@ rtdmmaControllers.
 controller('MainCtrl', function ($scope){
     
 })
-.controller('UserListCtrl', function ($scope, User){
+.controller('LoginCtrl', ['$scope', '$location', function($scope, $location) {
+    $scope.scan = function() {
+        cordova.plugins.barcodeScanner.scan(
+            function (result) {
+                var s = "Result: " + result.text + "<br/>" +
+                "Format: " + result.format + "<br/>" +
+                "Cancelled: " + result.cancelled;
+                console.log(s);
+            }, 
+            function (error) {
+                alert("Scanning failed: " + error);
+            }
+        );
+    };
+    
+    $scope.gotToUsers = function () {
+        $location.path('/users');
+    };
+}])
+.controller('UserListCtrl', ['$scope', 'User', function ($scope, User){
     'use strict';
     
     User.query(function(data) {
         $scope.users = data;
     });
-})
-.controller('UserTasksListCtrl', function ($scope, UserTasks, $routeParams){
+}])
+.controller('UserTasksListCtrl', ['$scope', 'UserTasks', '$routeParams', function ($scope, UserTasks, $routeParams){
     'use strict';
     
     UserTasks.query({ userId: $routeParams.userId, startedAt: null}, function (data) {
         $scope.tasks = data;        
     });
-})
-.controller('TaskCtrl', function($scope, $rootScope, $routeParams, $location, Tasks, TaskPost, $interval) {
+}])
+.controller('TaskCtrl', ['$scope', '$rootScope', '$routeParams', '$location', 'Tasks', 'TaskPost', '$interval', function($scope, $rootScope, $routeParams, $location, Tasks, TaskPost, $interval) {
     'use strict';
     $scope.showFinishAndCancelButtons = false;
     $scope.firedFinishButton = false;
@@ -62,7 +81,7 @@ controller('MainCtrl', function ($scope){
             $scope.cancelInterval();
         });
         $scope.showFinishAndCancelButtons = false;
-        $location.path('/user/' + $scope.task.owner);        
+        $location.path('/users/' + $scope.task.owner);        
     }
     
     $scope.cancelInterval = function() {
@@ -83,7 +102,7 @@ controller('MainCtrl', function ($scope){
             $scope.cancelInterval();
         });  
         $scope.showFinishAndCancelButtons = false;
-        $location.path('/user/' + $scope.task.owner);
+        $location.path('/users/' + $scope.task.owner);
     }
     
     
@@ -145,4 +164,4 @@ controller('MainCtrl', function ($scope){
             }
         }
     };
-});
+}]);

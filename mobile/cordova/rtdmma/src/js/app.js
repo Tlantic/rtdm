@@ -7,10 +7,11 @@ var rtdmma = angular.module('rtdmma', ['ngRoute','ngResource','ngTouch','rtdmmaF
 rtdmma.
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-      when('/users', {templateUrl: 'user-list.html',   controller: 'UserListCtrl'}).
+      when('/login', {templateUrl: 'login.html', controller: 'LoginCtrl'}).
+      when('/users', {templateUrl: 'user-list.html', controller: 'UserListCtrl'}).
       when('/users/:userId', {templateUrl: 'user-tasks.html', controller: 'UserTasksListCtrl'}).
       when ('/task/:taskId', {templateUrl: 'task-detail.html', controller: 'TaskCtrl'}).
-      otherwise({redirectTo: '/users'});
+      otherwise({redirectTo: '/login'});
     
 
 }]);

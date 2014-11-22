@@ -1,0 +1,19 @@
+{
+    "platforms": ["android"],
+    "cordova" : "3.6.4",
+    "plugins" : [
+        "cordova plugin add org.apache.cordova.console",
+        "cordova plugin add org.apache.cordova.device",
+        "cordova plugin add org.apache.cordova.device-motion",
+        "cordova plugin add org.apache.cordova.geolocation",
+        "cordova plugin add org.apache.cordova.inappbrowser",
+        "cordova plugin add org.apache.cordova.network-information",
+        "cordova plugin add org.apache.cordova.statusbar",
+        "cordova plugin add org.apache.cordova.vibration",
+        "cordova plugin add https://github.com/wildabeast/BarcodeScanner.git"
+    ],
+   
+    "cleanReleasePaths": [
+        "platforms/android/assets/www/**"
+    ]
+}
