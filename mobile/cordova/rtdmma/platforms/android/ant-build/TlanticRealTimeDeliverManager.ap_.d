@@ -119,6 +119,10 @@
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/css/bootstrap.min.css \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/img/glyphicons-halflings-white.png \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/img/glyphicons-halflings.png \
+/Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/img/login_scan.jpg \
+/Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/img/login_scan.png \
+/Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/img/logo.jpg \
+/Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/img/logo_min.jpg \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/js/animations.js \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/js/app.js \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/js/controllers.js \
@@ -937,6 +941,7 @@
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/partials/user-list.html \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/partials/user-tasks.html \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/com.phonegap.plugins.barcodescanner \
+/Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/com.phonegap.plugins.OrientationLock \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/org.apache.cordova.device-motion \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser \
@@ -945,6 +950,8 @@
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/org.apache.cordova.vibration \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/com.phonegap.plugins.barcodescanner/www \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/com.phonegap.plugins.barcodescanner/www/barcodescanner.js \
+/Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/com.phonegap.plugins.OrientationLock/www \
+/Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/com.phonegap.plugins.OrientationLock/www/orientationLock.js \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www \

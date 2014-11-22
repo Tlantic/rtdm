@@ -64,6 +64,13 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.barcodeScanner"
         ]
+    },
+    {
+        "file": "plugins/com.phonegap.plugins.OrientationLock/www/orientationLock.js",
+        "id": "com.phonegap.plugins.OrientationLock.OrientationLock",
+        "clobbers": [
+            "OrientationLock"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -77,7 +84,8 @@ module.exports.metadata =
     "org.apache.cordova.network-information": "0.2.13",
     "org.apache.cordova.statusbar": "0.1.8",
     "org.apache.cordova.vibration": "0.3.11",
-    "com.phonegap.plugins.barcodescanner": "2.0.1"
+    "com.phonegap.plugins.barcodescanner": "2.0.1",
+    "com.phonegap.plugins.OrientationLock": "0.1"
 }
 // BOTTOM OF METADATA
 });

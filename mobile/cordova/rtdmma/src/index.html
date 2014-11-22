@@ -3,6 +3,9 @@
 <script src="cordova.js"></script>
 <script>
     var RunApp = function(){
+        if (window.client.mobile) {
+            window.plugins.orientationLock.lock("portrait");
+        }
         window.location = "partials/index.html";
     };
     if (window.client.mobile) {

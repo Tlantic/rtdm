@@ -1,4 +1,5 @@
 <div class="content-fluid" ng-controller="TaskCtrl">
+    <div class="row-fluid">Usuário: {{name}}</div>
     <div class="content-fluid">
         <p class="task">
         Descrição: {{task.description}}
@@ -13,5 +14,8 @@
             <button ng-click="finishTaskWithSuccess()" class="task.button btn btn-success" ng-show="showFinishAndCancelButtons">Entrega Conclu&iacute;da</button>
             <button ng-click="finishTaskWithFailure('NotFound')" class="task.button btn btn-success" ng-show="showFinishAndCancelButtons">Cliente Não Encontrado</button>
         </div>
+    </div>
+     <div class="footer">
+        Status: {{postStatus}} Data: {{postDate}}
     </div>
 </div>

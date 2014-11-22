@@ -198,6 +198,7 @@ module.exports = function (grunt) {
     
     // running over platforms
     grunt.registerTask('android', ['clean',  'copy:dev', 'copy:dist', 'shell:build_android', 'shell:run_android']);
+    grunt.registerTask('plugins',['shell:plugins']);
     
     // run ALL targets
     grunt.registerTask('all', ['clean','jshint','test','yuidoc','copy:dev','copy:dist','release']); //distribute

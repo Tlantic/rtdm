@@ -35,6 +35,10 @@
                         {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"android-package\" value=\"com.phonegap.plugins.barcodescanner.BarcodeScanner\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"OrientationLock\"><param name=\"android-package\" value=\"com.plugin.phonegap.OrientationLock\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -599,6 +603,9 @@
             "PACKAGE_NAME": "com.tlantic.rtdmma"
         },
         "com.phonegap.plugins.barcodescanner": {
+            "PACKAGE_NAME": "com.tlantic.rtdmma"
+        },
+        "com.phonegap.plugins.OrientationLock": {
             "PACKAGE_NAME": "com.tlantic.rtdmma"
         }
     },

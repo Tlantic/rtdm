@@ -10,6 +10,9 @@ To Configure your environment, you must do:
 To Build and Run you Android RTDM-MA App you must:
 1. Run "grunt android".
 
+To Update or reinstall Cordova plugins you must:
+1. Run "grunt plugins".
+
 You App will be delivered in you connected Android Device.
 
 And next, have fun!

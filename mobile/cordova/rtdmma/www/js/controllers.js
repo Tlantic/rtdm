@@ -4,7 +4,7 @@ rtdmmaControllers.
 controller('MainCtrl', function ($scope){
     
 })
-.controller('LoginCtrl', ['$scope', '$location', function($scope, $location) {
+.controller('LoginCtrl', ['$scope', '$rootScope','$location', 'User', function($scope, $rootScope, $location, User) {
     $scope.scan = function() {
         cordova.plugins.barcodeScanner.scan(
             function (result) {
@@ -12,15 +12,37 @@ controller('MainCtrl', function ($scope){
                 "Format: " + result.format + "<br/>" +
                 "Cancelled: " + result.cancelled;
                 console.log(s);
+                if (result.cancelled) {
+                    alert ('Pressione a imagem para scannear o código do seu crachá!');
+                } else {
+                    User.query(function(userList) {
+                        var userFound = false;
+                        console.log("Result: User.query:" + JSON.stringify(userList.result));
+                        console.log("Result: Code Read:" + result.text);
+                        for(var userIndex in userList.result) {
+                            var user = userList.result[userIndex];
+                            if (result.text == user._id) {
+                                console.log ("Result: UserName: " + user.username);
+                                $rootScope.userId = user._id;
+                                $rootScope.name = user.name;
+                                $rootScope.userName = user.username;
+                                userFound = true;
+                            }
+                        }
+                        if (!userFound) {
+                            alert ('Usuário inválido!\nInforme outro código!')
+                        } else {
+                            console.log("Result: userId: " + $rootScope.userId);
+                            $location.path("/users/" + $rootScope.userId);
+                        }
+                    });
+                    
+                }
             }, 
             function (error) {
                 alert("Scanning failed: " + error);
             }
         );
-    };
-    
-    $scope.gotToUsers = function () {
-        $location.path('/users');
     };
 }])
 .controller('UserListCtrl', ['$scope', 'User', function ($scope, User){
@@ -30,8 +52,9 @@ controller('MainCtrl', function ($scope){
         $scope.users = data;
     });
 }])
-.controller('UserTasksListCtrl', ['$scope', 'UserTasks', '$routeParams', function ($scope, UserTasks, $routeParams){
+.controller('UserTasksListCtrl', ['$scope', '$rootScope', 'UserTasks', '$routeParams', function ($scope, $rootScope, UserTasks, $routeParams){
     'use strict';
+    $scope.name = $rootScope.name;
     
     UserTasks.query({ userId: $routeParams.userId, startedAt: null}, function (data) {
         $scope.tasks = data;        
@@ -42,6 +65,9 @@ controller('MainCtrl', function ($scope){
     $scope.showFinishAndCancelButtons = false;
     $scope.firedFinishButton = false;
     $scope.TaskPost = TaskPost;
+    $scope.name = $rootScope.name;
+    $scope.postStatus = "Tarefa carregada com sucesso.";
+    $scope.postDate = new Date();
     getDetail();
     var stopInterval;
     
@@ -79,9 +105,11 @@ controller('MainCtrl', function ($scope){
             $scope.task = data;
             Tasks.$delete({id: task._id});
             $scope.cancelInterval();
+            $scope.postDate = new Date();
+            $scope.postStatus = "Tarefa cancelada.";
         });
         $scope.showFinishAndCancelButtons = false;
-        $location.path('/users/' + $scope.task.owner);        
+        $location.path('#/users/' + $scope.task.owner);        
     }
     
     $scope.cancelInterval = function() {
@@ -100,9 +128,11 @@ controller('MainCtrl', function ($scope){
             $scope.failureReason = '';
             $scope.getCurrentPosition();
             $scope.cancelInterval();
+            $scope.postDate = new Date();
+            $scope.postStatus = "Finalizando tarefa...";
         });  
         $scope.showFinishAndCancelButtons = false;
-        $location.path('/users/' + $scope.task.owner);
+        $location.path('#/users/' + $scope.task.owner);
     }
     
     
@@ -115,9 +145,11 @@ controller('MainCtrl', function ($scope){
             $scope.failureReason = 'Cliente n&atilde;o encontrado.';
             $scope.getCurrentPosition();
             $scope.cancelInterval();
+            $scope.postDate = new Date();
+            $scope.postStatus = "Cliente não encontrado, finalizando tarefa...";
         });  
         $scope.showFinishAndCancelButtons = false;
-        $location.path('/user/' + $scope.task.owner);
+        $location.path('#/user/' + $scope.task.owner);
     }
     
     // Get Current Position
@@ -145,8 +177,9 @@ controller('MainCtrl', function ($scope){
 	// onError Callback receives a PositionError object
 	//
 	function onGeolocationError(error) {
-	    alert('code: '    + error.code    + '\n' +
-	          'message: ' + error.message + '\n');
+        console.log ('Task.Id: ' + $scope.taskId + '\n' + 
+	    'Geolocation.code: '    + error.code    + '\n' +
+	    'Geolocation.message: ' + error.message + '\n');
 	}
 
     
@@ -159,8 +192,12 @@ controller('MainCtrl', function ($scope){
         	var position = $scope.currentPosition;
             if (finished != null) {
                 $scope.TaskPost.updateTask($scope.taskId, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}, finished: finished, failureReason: failureReason}); 
+                $scope.postDate = new Date();
+                $scope.postStatus = "Posição atualizada com sucesso.";
             } else {
-                $scope.TaskPost.updateTask($scope.taskId, {lastCoords:{ lat: position.coords.latitude, lon: position.coords.longitude}});
+                $scope.TaskPost.updateTask($scope.taskId, {lastCoords:{ lat: position.coords.latitude, lon : position.coords.longitude}});
+                $scope.postDate = new Date();
+                $scope.postStatus = "Tarefa finalizada com sucesso.";
             }
         }
     };

@@ -1,5 +1,6 @@
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/ant-build/classes.dex : \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/ant-build/classes/com/phonegap/plugins/barcodescanner/BarcodeScanner.class \
+/Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/ant-build/classes/com/plugin/phonegap/OrientationLock.class \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/ant-build/classes/com/tlantic/rtdmma/BuildConfig.class \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/ant-build/classes/com/tlantic/rtdmma/R$array.class \
 /Users/padilha/Developer/Tlantic/rtdm/mobile/cordova/rtdmma/platforms/android/ant-build/classes/com/tlantic/rtdmma/R$attr.class \
