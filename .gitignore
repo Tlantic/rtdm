@@ -9,4 +9,7 @@ mobile/cordova/rtdmma/www/
 mobile/cordova/rtdmma/src/lib/
 mobile/cordova/rtdmma/platforms/android/assets/
 *.apk
+mobile/cordova/rtdmma/platforms/android/bin/
 mobile/cordova/rtdmma/platforms/android/gen/
+mobile/cordova/rtdmma/platforms/android/CordovaLib/bin/
+mobile/cordova/rtdmma/platforms/android/CordovaLib/gen/
