@@ -3,6 +3,10 @@
 /server/public/html/
 /mobile/node_modules/
 /mobile/cordova/rtdmma/node_modules/
+mobile/cordova/node_modules/
 mobile/cordova/rtdmma/config/bower_components/
 mobile/cordova/rtdmma/www/
 mobile/cordova/rtdmma/src/lib/
+mobile/cordova/rtdmma/platforms/android/assets/
+*.apk
+mobile/cordova/rtdmma/platforms/android/gen/
