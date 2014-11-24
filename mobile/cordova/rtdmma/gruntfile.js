@@ -75,7 +75,7 @@ module.exports = function (grunt) {
                     failOnError: true,
                     async:false
                 },
-                command: 'cordova create --name <%= pkg.name %> --id pt.continente.ContinenteTelemovel.v2.<%= pkg.name %> ./'
+                command: 'cordova create --name <%= pkg.name %> --id com.tlantic.<%= pkg.name %> ./'
                 
             },
             
