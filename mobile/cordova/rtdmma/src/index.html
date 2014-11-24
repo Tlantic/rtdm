@@ -1,16 +1,23 @@
-<script src="lib/tlantic-clientdetector/client-detector.js"></script>
-
-<script src="cordova.js"></script>
+<!doctype html>
+<html>
+<head>
+	<title>RTDM</title>
+	<script src="lib/tlantic-clientdetector/client-detector.js"></script>
+	<script src="cordova.js"></script>
+</head>
+<body style="background-color: #000">
 <script>
-    var RunApp = function(){
-        if (window.client.mobile) {
-            window.plugins.orientationLock.lock("portrait");
-        }
-        window.location = "partials/index.html";
-    };
-    if (window.client.mobile) {
-       document.addEventListener("deviceready", RunApp, false); 
-    } else {
-       RunApp(); 
-    }
+	var RunApp = function(){
+		if (window.client.mobile) {
+			window.plugins.orientationLock.lock("portrait");
+		}
+		window.location = "partials/index_.html";
+	};
+	if (window.client.mobile) {
+		document.addEventListener("deviceready", RunApp, false);
+	} else {
+		RunApp();
+	}
 </script>
+</body>
+</html>

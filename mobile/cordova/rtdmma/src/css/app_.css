@@ -1,0 +1,12 @@
+body, .app {
+	background-color: #362372;
+	color: #fff;
+}
+
+.app-login h2 {
+	margin-top: 40px;
+}
+
+.app-login h4 {
+	line-height: 150%;
+}
