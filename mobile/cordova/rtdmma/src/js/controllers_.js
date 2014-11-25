@@ -2,11 +2,19 @@ var rtdmmaControllers = angular.module('rtdmmaControllers', []);
 
 rtdmmaControllers.
 controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
-	$rootScope.loggedIn = false;
+	'use strict';
+	$scope.logout = function() {
+		$rootScope.loggedIn = 0;
+		$rootScope.userId = undefined;
+		$rootScope.name = undefined;
+		$rootScope.userName = undefined;
+		$location.path("/login");
+	};
 }])
 .controller('LoginCtrl', ['$scope', '$rootScope','$location', 'User', function($scope, $rootScope, $location, User) {
+	$rootScope.loggedIn = 0;
 	$scope.fakeScan = function() {
-		$rootScope.loggedIn = true;
+		$rootScope.loggedIn = 1;
 		$rootScope.userId = "546241bbc7a4804c068589c7";
 		$rootScope.name = "user.name";
 		$rootScope.userName = "user.username";
@@ -40,7 +48,7 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 							alert ('Usuário inválido!\nInforme outro código!')
 						} else {
 							console.log("Result: userId: " + $rootScope.userId);
-							$scope.loggedIn = true;
+							$rootScope.loggedIn = 1;
 							$location.path("/users/" + $rootScope.userId);
 						}
 					});
@@ -50,6 +58,11 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 				alert("Scanning failed: " + error);
 			}
 		);
+	};
+	$scope.exit = function() {
+		if (navigator.app.exitApp) {
+			navigator.app.exitApp();
+		};
 	};
 }])
 .controller('UserListCtrl', ['$scope', 'User', function ($scope, User){
