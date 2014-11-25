@@ -4,14 +4,29 @@
 	<title>RTDM</title>
 	<script src="lib/tlantic-clientdetector/client-detector.js"></script>
 	<script src="cordova.js"></script>
+	<style type="text/css">
+	html, body {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	body {
+		background: black url(img/tlantic-wall-dark.png) center center no-repeat;;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	</style>
 </head>
-<body style="background-color: #000">
+<body>
 <script>
 	var RunApp = function(){
 		if (window.client.mobile) {
 			window.plugins.orientationLock.lock("portrait");
 		}
-		window.location = "partials/index_.html";
+		setTimeout(function(){window.location = "partials/index_.html"}, 1000);
 	};
 	if (window.client.mobile) {
 		document.addEventListener("deviceready", RunApp, false);
