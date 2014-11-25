@@ -7,6 +7,7 @@ var rtdmma = angular.module('rtdmma', [
 		"rtdmmaFilters",
 		"rtdmmaServices",
 		"rtdmmaControllers",
+		"angular-loading-bar",
 		"mobile-angular-ui"
 	]);
 

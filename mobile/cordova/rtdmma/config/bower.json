@@ -10,6 +10,7 @@
     "angular-bindonce": "~0.2.1",
     "angular-i18n": "~1.2",
     "angular-resource": ">=0.1",
+    "angular-loading-bar": "~0.6.0",
     "mobile-angular-ui": "~1.1.0-beta.30"
   },
   "resolutions": {
