@@ -129,7 +129,7 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 			$scope.postStatus = "Tarefa cancelada.";
 		});
 		$scope.showFinishAndCancelButtons = false;
-		$location.path('#/users/' + $scope.task.owner);
+		$location.path('/users/' + $rootScope.userId);
 	}
 
 	$scope.cancelInterval = function() {
@@ -152,7 +152,7 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 			$scope.postStatus = "Finalizando tarefa...";
 		});
 		$scope.showFinishAndCancelButtons = false;
-		$location.path('#/users/' + $scope.task.owner);
+		$location.path('/users/' + $rootScope.userId);
 	}
 
 
@@ -169,12 +169,12 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 			$scope.postStatus = "Cliente não encontrado, finalizando tarefa...";
 		});
 		$scope.showFinishAndCancelButtons = false;
-		$location.path('#/user/' + $scope.task.owner);
+		$location.path('/users/' + $rootScope.userId);
 	}
 
 	// Get Current Position
 	$scope.getCurrentPosition = function () {
-		navigator.geolocation.getCurrentPosition(onGeolocationSuccess, onGeolocationError, {timeout: 5000, enableHighAccuracy: true});
+		navigator.geolocation.getCurrentPosition(onGeolocationSuccess, onGeolocationError, {timeout: 15000, enableHighAccuracy: true});
 	};
 
 	var onGeolocationSuccess = function(position) {
