@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br" ng-app="rtdmma">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>RTDM Mobile App</title>
+	<style>
+	[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+		display: none !important;
+	}
+	</style>
+	<link rel="stylesheet" href="../lib/mobile-angular-ui/dist/css/mobile-angular-ui-base.min.css">
+	<link rel="stylesheet" href="../lib/angular-loading-bar/build/loading-bar.min.css">
+	<link rel="stylesheet" href="../css/app_.css">
+</head>
+<body ng-controller="MainCtrl" ng-switch="loggedIn" ng-swipe-left="toggle('mainSidebar','off')" ng-swipe-right="toggle('mainSidebar','on')" ng-cloak>
+	<div class="sidebar sidebar-left" toggleable parent-active-class="sidebar-left-in" id="mainSidebar" ng-switch-when="1">
+		<h1 class="app-name">{{name}}</h1>
+		<div class="scrollable">
+			<div class="scrollable-content">
+				<div class="list-group" toggle="off" bubble target="mainSidebar">
+					<a class="list-group-item" ng-href="#/users/{{userId}}">Pedidos a entregar<i class="fa fa-chevron-right pull-right"></i></a>
+					<a class="list-group-item" ng-href="#/logout">Encerrar turno<i class="fa fa-chevron-right pull-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="app page-login" ng-class="appClass">
+		<div class="navbar navbar-app navbar-absolute-top ng-cloak animate-navtop" id="navTop" ng-switch-when="1">
+			<div class="pull-right" id="logo">
+				<img src="../img/panvel-logo-bg-blue-350.jpg">
+			</div>
+			<div class="btn-group pull-left">
+				<div ng-click="toggle('mainSidebar')" class="btn btn-navbar sidebar-toggle">
+					<i class="fa fa-bars"></i>
+				</div>
+			</div>
+			<div class="btn-group pull-left" id="navbar-title" yield-to="title"></div>
+		</div>
+		<div class="app-body">
+			<ng-view class="app-content"></ng-view>
+		</div>
+	</div>
+	<script src="../lib/angular/angular.min.js"></script>
+	<script src="../lib/angular-route/angular-route.min.js"></script>
+	<script src="../lib/angular-resource/angular-resource.min.js"></script>
+	<script src="../lib/angular-cookies/angular-cookies.min.js"></script>
+	<script src="../lib/angular-bindonce/bindonce.min.js"></script>
+	<script src="../lib/angular-touch/angular-touch.min.js"></script></script>
+	<!-- script src="../lib/angular-animate/angular-animate.min.js"></script></script -->
+	<script src="../lib/angular-loading-bar/build/loading-bar.min.js"></script>
+	<script src="../lib/mobile-angular-ui/dist/js/mobile-angular-ui.min.js"></script>
+	<script src="../lib/tlantic-clientdetector/client-detector.js"></script>
+	<script src="../js/app_.js"></script>
+	<script src="../js/filters.js"></script>
+	<script src="../js/directives.js"></script>
+	<script src="../js/services.js"></script>
+	<script src="../js/controllers_.js"></script>
+	<script src="../cordova.js"></script>
+</body>
+</html>
