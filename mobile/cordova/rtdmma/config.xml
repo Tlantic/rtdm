@@ -1,16 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.tlantic.rtdmma" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Tlantic Realtime Delivery Management</name>
+<widget id="com.tlantic.rtdmma" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Tlantic RTDM</name>
     <description>
         Tlantic Realtime Delivery Management Mobile Application
     </description>
     <author email="tlantic@tlantic.com.br" href="http://www.tlantic.com.br">
         Tlantic RTDM Team
     </author>
-    <content src="index.html" />
+    <content src="partials/index_.html" />
     <access origin="*" />
-	
+
 	<!-- Android -->
+    <platform name="android">
+        <icon src="config/res/drawable-hdpi/ic_launcher.png" density="hdpi" />
+        <icon src="config/res/drawable-mdpi/ic_launcher.png" density="mdpi" />
+        <icon src="config/res/drawable-xhdpi/ic_launcher.png" density="xhdpi" />
+        <icon src="config/res/drawable-xxhdpi/ic_launcher.png" density="xxhdpi" />
+        <icon src="config/res/drawable-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
+    </platform>
 	<preference name="KeepRunning" value="true"/>
 	<preference name="SplashScreenDelay" value="3000"/>
 </widget>
