@@ -1,12 +1,68 @@
-body, .app {
+.app .app-content {
+	background-color: #ddd;
+	color: #000;
+}
+
+.app.page-login .app-content,
+.app.page-logout .app-content {
 	background-color: #362372;
 	color: #fff;
 }
 
-.app-login h2 {
-	margin-top: 40px;
+.list-group-item {
+	font-size: 1.4em;
 }
 
-.app-login h4 {
-	line-height: 150%;
+.btn-group-anchor-bottom {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	left: 10px;
+}
+
+.navbar-app {
+	background-color: #362372;
+}
+
+.navbar-absolute-top {
+	border-bottom-width: 0;
+}
+
+.navbar-app .btn,
+.navbar-app .btn-navbar {
+	color: #fff;
+}
+
+#logo {
+	padding: 14px 8px 0 0;
+}
+
+#logo img {
+	height: 20px;
+}
+
+#navbar-title {
+	color: #fff;
+	line-height: 50px;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+#loading-bar-spinner {
+	left: 6px;
+	top: 12px;
+}
+
+#loading-bar-spinner .spinner-icon{
+	width:24px;
+	height:24px;
+	border-radius:20px;
+}
+
+.content-task-detail {
+	font-size: 1.4em;
+}
+
+#task-detail-actions button {
+	font-size: 1.4em;
 }
