@@ -1,18 +1,18 @@
 <div content-for="title">Detalhes</div>
-<div class="app-task-detail scrollable" ng-controller="TaskCtrl">
+<div class="scrollable" ng-controller="TaskCtrl">
 	<div class="scrollable-content" ui-scroll-bottom="bottomReached()">
-		<div class="container">
+		<div class="container content-task-detail">
 			<div class="row">
 				<div class="col-xs-4 text-right">Pedido:</div>
 				<div class="col-xs-8">#12345678</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-4 text-right">Estimativa Entrega:</div>
-				<div class="col-xs-8">00:00</div>
+				<div class="col-xs-4 text-right">Estimativa:</div>
+				<div class="col-xs-8"><span class="label label-success">00:00</span></div>
 			</div>
 			<div class="row">
-				<div class="col-xs-4 text-right">Limite Entrega:</div>
-				<div class="col-xs-8">00:00</div>
+				<div class="col-xs-4 text-right">Limite:</div>
+				<div class="col-xs-8"><span class="label label-info">00:00</span></div>
 			</div>
 			<div class="row">
 				<div class="col-xs-4 text-right">Endereço:</div>
@@ -25,10 +25,14 @@
 					<span><a href="tel:99998888">51 9999-8888</a></span>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center" style="font-size: .7em">
+					<p>{{postStatus}}<br>
+					<span am-time-ago="postDate"></span><br>
+					<span class="text-info">{{posLat}},{{posLon}} (ID {{watchID}})</span></p>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div>
-		<p class="">{{postStatus}} @ {{postDate}}</p>
 	</div>
 	<div class="btn-group-anchor-bottom center-block btn-group-lg" id="task-detail-actions">
 		<button ng-click="startTask()" class="task.button btn btn-block btn-primary" ng-show="!showFinishAndCancelButtons"><i class="fa fa-road"></i> Iniciar entrega</button>
@@ -36,13 +40,5 @@
 		<button ng-click="finishTaskWithSuccess()" class="task.button btn btn-block btn-success" ng-show="showFinishAndCancelButtons"><i class="fa fa-thumbs-up"></i> Entrega Conclu&iacute;da</button>
 		<button ng-click="finishTaskWithFailure('NotFound')" class="task.button btn btn-block btn-danger" ng-show="showFinishAndCancelButtons"><i class="fa fa-thumbs-down"></i> Entrega Falhou</button>
 		<button ng-click="cancelTask()" class="task.button btn btn-block btn-default" ng-show="showFinishAndCancelButtons"><i class="fa fa-close"></i> Cancelar e voltar</button>
-	</div>
-	<div overlay="actionOverlay">
-		<div class="app-login text-center">
-			<h1>Confirma entrega?</h1>
-			<button ng-click="finishTaskWithSuccess()" class="btn-block btn-lg btn-primary text-center" style="font-size: 2em;">
-				<i class="fa fa-check"></i><br>Confirmo
-			</button>
-		</div>
 	</div>
 </div>
