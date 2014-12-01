@@ -42,7 +42,7 @@ exports.getTask = function (req, res, next) {
 };
 
 exports.getTaskByOwner = function (req, res, next) {
-    Task.where('owner',  req.loadedOwner).exec(function (err, tasks) {
+    Task.where('owner',  req.loadedOwner).where('finishedAt',null).exec(function (err, tasks) {
         return res.json( mBuilder.buildQuickResponse(err, 'Error listing tasks!', tasks) );
     });
 };
