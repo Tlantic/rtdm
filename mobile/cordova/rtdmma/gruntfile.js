@@ -57,6 +57,25 @@ module.exports = function (grunt) {
         },
         
         shell: {
+            /* debugging tools -RAA */
+            logcat_dump: {
+                options: {
+                    stdout: true,
+                    stderr: true,
+                    failOnError: true,
+                    async:false
+                },
+                command: "adb.exe logcat -s -d Cordova CordovaActivity CordovaWebViewClient CordovaLog LocationManagerService GpsLocationProvider"
+            },
+            logcat_tail: {
+                options: {
+                    stdout: true,
+                    stderr: true,
+                    failOnError: true,
+                    async:false
+                },
+                command: "adb.exe logcat -s Cordova CordovaActivity CordovaWebViewClient CordovaLog LocationManagerService GpsLocationProvider"
+            },
             /*** project dependencies ***/            
             dependencies: {
                 options: {
@@ -197,8 +216,12 @@ module.exports = function (grunt) {
     
     
     // running over platforms
-    grunt.registerTask('android', ['clean',  'copy:dev', 'copy:dist', 'shell:build_android', 'shell:run_android']);
+    grunt.registerTask('android', ['clean',  'copy:dev', 'copy:dist', 'shell:build_android', 'shell:run_android', 'shell:logcat_tail']);
     grunt.registerTask('plugins',['shell:plugins']);
+
+    // debugging
+    grunt.registerTask('logcat',['shell:logcat_tail']);
+    grunt.registerTask('logcatdump',['shell:logcat_dump']);
     
     // run ALL targets
     grunt.registerTask('all', ['clean','jshint','test','yuidoc','copy:dev','copy:dist','release']); //distribute
