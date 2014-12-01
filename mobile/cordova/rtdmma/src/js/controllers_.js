@@ -1,26 +1,45 @@
 var rtdmmaControllers = angular.module('rtdmmaControllers', []);
 
 rtdmmaControllers.
-controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
+controller('MainCtrl', ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
 	'use strict';
+
+	$rootScope.loggedIn = 0;
+
 	$scope.logout = function() {
 		$rootScope.loggedIn = 0;
-		$rootScope.userId = undefined;
-		$rootScope.name = undefined;
-		$rootScope.userName = undefined;
+		console.info("Logout()");
+		console.debug("MainCtrl@logout rootScope.loggedIn = " + $rootScope.loggedIn);
+		console.debug("MainCtrl@logout rootScope.userId   = " + $rootScope.userId);
+		console.debug("MainCtrl@logout rootScope.name     = " + $rootScope.name);
+		console.debug("MainCtrl@logout rootScope.userId   = " + $rootScope.userId);
+
+		$scope.toggle('mainSidebar','off');
+
+		console.debug("location.path /login");
 		$location.path("/login");
 	};
 }])
-.controller('LoginCtrl', ['$scope', '$rootScope','$location', 'User', function($scope, $rootScope, $location, User) {
+.controller('LoginCtrl', ['$scope', '$rootScope', '$location', 'User', function($scope, $rootScope, $location, User) {
+	'use strict';
+
 	$rootScope.loggedIn = 0;
+	$rootScope.appClass = "page-login";
+	$rootScope.userId = undefined;
+	$rootScope.name = undefined;
+	$rootScope.userName = undefined;
+	$scope.toggle('mainSidebar','off');
+
 	$scope.fakeScan = function() {
 		$rootScope.loggedIn = 1;
 		$rootScope.userId = "546241bbc7a4804c068589c7";
-		$rootScope.name = "user.name";
-		$rootScope.userName = "user.username";
+		$rootScope.name = "Entregador Exemplo";
+		$rootScope.userName = "user.exemplo";
 		$location.path("/users/" + $rootScope.userId);
 	};
+
 	$scope.scan = function() {
+		$scope.scanning = true;
 		cordova.plugins.barcodeScanner.scan(
 			function (result) {
 				var s = "Result: " + result.text + "<br>" +
@@ -28,7 +47,8 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 				"Cancelled: " + result.cancelled;
 				console.log(s);
 				if (result.cancelled) {
-					alert ('Pressione a imagem para scannear o código do seu crachá!');
+					$scope.scanning = false;
+					alert ('Pressione o botão e enquadre o código de ativação!');
 				} else {
 					User.query(function(userList) {
 						var userFound = false;
@@ -41,29 +61,33 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 								$rootScope.userId = user._id;
 								$rootScope.name = user.name;
 								$rootScope.userName = user.username;
+								$rootScope.loggedIn = 1;
 								userFound = true;
 							}
 						}
+						$scope.scanning = false;
 						if (!userFound) {
 							alert ('Usuário inválido!\nInforme outro código!')
 						} else {
 							console.log("Result: userId: " + $rootScope.userId);
-							$rootScope.loggedIn = 1;
 							$location.path("/users/" + $rootScope.userId);
 						}
 					});
 				}
 			},
 			function (error) {
-				alert("Scanning failed: " + error);
+				$scope.scanning = false;
+				alert("Falha na captura: " + error);
 			}
 		);
 	};
+
 	$scope.exit = function() {
-		if (navigator.app.exitApp) {
+		if (window.client.mobile) {
 			navigator.app.exitApp();
 		};
 	};
+
 }])
 .controller('UserListCtrl', ['$scope', 'User', function ($scope, User){
 	'use strict';
@@ -74,6 +98,8 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 }])
 .controller('UserTasksListCtrl', ['$scope', '$rootScope', 'UserTasks', '$routeParams', function ($scope, $rootScope, UserTasks, $routeParams){
 	'use strict';
+	$rootScope.loggedIn = 1;
+	$rootScope.appClass = 'page-user-tasks has-navbar-top';
 	$scope.name = $rootScope.name;
 
 	UserTasks.query({ userId: $routeParams.userId, startedAt: null}, function (data) {
@@ -82,14 +108,21 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 }])
 .controller('TaskCtrl', ['$scope', '$rootScope', '$routeParams', '$location', 'Tasks', 'TaskPost', '$interval', function($scope, $rootScope, $routeParams, $location, Tasks, TaskPost, $interval) {
 	'use strict';
+
+	$rootScope.appClass = 'page-task has-navbar-top';
+
 	$scope.showFinishAndCancelButtons = false;
 	$scope.firedFinishButton = false;
 	$scope.TaskPost = TaskPost;
 	$scope.name = $rootScope.name;
 	$scope.postStatus = "Tarefa carregada com sucesso.";
 	$scope.postDate = new Date();
+
 	getDetail();
-	var stopInterval;
+	var stopInterval,
+		posLat = "0",
+		posLon = "0",
+		watchID = "N";
 
 	// Get Task Detail to Bind Items
 	function getDetail() {
@@ -106,12 +139,17 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 			$scope.failureReason = null;
 			$scope.taskId = task._id;
 			$scope.firedFinishButton = false;
-			$scope.getCurrentPosition();
-			if (!angular.isDefined(stopInterval)) {
-				stopInterval = $interval(function() {
-					$scope.getCurrentPosition();
-				}, 10000);
-			}
+			$scope.watchID = navigator.geolocation.watchPosition(
+				onGeolocationSuccess,
+				onGeolocationError,
+				{ maximumAge: 60000, timeout: 10000, enableHighAccuracy: true }
+			);
+			// $scope.getCurrentPosition();
+			// if (!angular.isDefined(stopInterval)) {
+			// 	stopInterval = $interval(function() {
+			// 		$scope.getCurrentPosition();
+			// 	}, 20000);
+			// }
 		});
 		$scope.showFinishAndCancelButtons = true;
 		localStorage.removeItem('taskId');
@@ -123,20 +161,24 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 		$scope.firedFinishButton = false;
 		var task = Tasks.get({id: $routeParams.taskId}, function(data) {
 			$scope.task = data;
-			Tasks.$delete({id: task._id});
+			Tasks.delete({id: task._id});
 			$scope.cancelInterval();
 			$scope.postDate = new Date();
 			$scope.postStatus = "Tarefa cancelada.";
+			localStorage.removeItem('taskId');
 		});
 		$scope.showFinishAndCancelButtons = false;
 		$location.path('/users/' + $rootScope.userId);
 	}
 
 	$scope.cancelInterval = function() {
+		console.info("RTDMINFO TaskCtrl cancelInterval()");
 		if (angular.isDefined(stopInterval)) {
 			$interval.cancel(stopInterval);
 			stopInterval = undefined;
 		}
+		console.debug("RTDMDEBUG geolocation.clearWatch $scope.watchID ", $scope.watchID);
+		navigator.geolocation.clearWatch($scope.watchID);
 	};
 
 	// Event Fired by Finish Button
@@ -178,26 +220,30 @@ controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 	};
 
 	var onGeolocationSuccess = function(position) {
+		console.info("RTDMINFO",
+			"TaskCtrl onGeolocationSuccess()"
+		);
 	$scope.currentPosition = position;
-	console.log(
-		   'Latitude: '          + position.coords.latitude          + '\n' +
+	console.debug("RTDMDEBUG",
+		  'Latitude: '          + position.coords.latitude          + '\n' +
 		  'Longitude: '         + position.coords.longitude         + '\n' +
-		  'Atitude: '          + position.coords.altitude          + '\n' +
+		  'Altitude: '          + position.coords.altitude          + '\n' +
 		  'Accuracy: '          + position.coords.accuracy          + '\n' +
 		  'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
 		  'Heading: '           + position.coords.heading           + '\n' +
 		  'Speed: '             + position.coords.speed             + '\n' +
 		  'Timestamp: '         + position.timestamp                + '\n');
 
+		$scope.posLat = position.coords.latitude;
+		$scope.posLon = position.coords.longitude;
 		$scope.updateTask();
-
 	};
 
 
 	// onError Callback receives a PositionError object
 	//
 	function onGeolocationError(error) {
-		console.log ('Task.Id: ' + $scope.taskId + '\n' +
+		console.error ('Task.Id: ' + $scope.taskId + '\n' +
 		'Geolocation.code: '    + error.code    + '\n' +
 		'Geolocation.message: ' + error.message + '\n');
 	}
