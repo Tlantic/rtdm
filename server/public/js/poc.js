@@ -75,7 +75,7 @@ init.push(function () {
 							var $content = $("<div>")
 								.append( $("<div>").append($("<strong>").text(vv.description)) )
 								.append( $("<div>").text(vv.address) )
-								.append( $("<div>").html('EST: <span class="label label-success" title="Estimativa de entrega">HH:MM</span><br>LIM: <span class="label label-primary" title="Horário limite">HH:MM</span>') );
+								.append( $("<div>").html('EST: <span class="label label-success" title="Estimativa de entrega">10:59</span><br>LIM: <span class="label label-primary" title="Horário limite">11:19</span>') );
 							var infowindow = new google.maps.InfoWindow({
 								content: $content.html(),
 								maxWidth: 300

@@ -3,3 +3,27 @@
 	min-height: 100px;
 }
 
+#poweredby {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 200px;
+	background-color: #222;
+	color: #fff;
+	text-align: center;
+	padding: 4px;
+	-webkit-border-top-left-radius: 13px;
+	-moz-border-top-left-radius: 13px;
+	border-top-left-radius: 13px;
+}
+
+#main-navbar .navbar-header {
+	/*background: red !important;*/
+}
+
+#logo-header {
+	height: 20px;
+	width: auto;
+	margin-top: 14px;
+	margin-left: 8px;
+}
