@@ -1,0 +1,9 @@
+<div class="scrollable">
+	<div class="scrollable-content" ui-scroll-bottom="bottomReached()">
+		<div class="list-group">
+			<a ng-repeat="user in users.result | orderBy:name" ng-href="#/users/{{user._id}}" class="list-group-item task-list">
+			{{user.name}} <i class="fa fa-chevron-right pull-right"></i>
+			</a>
+		</div>
+	</div>
+</div>
