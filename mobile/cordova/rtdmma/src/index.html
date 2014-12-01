@@ -26,7 +26,7 @@
 		if (window.client.mobile) {
 			window.plugins.orientationLock.lock("portrait");
 		}
-		setTimeout(function(){window.location = "partials/index_.html"}, 1000);
+		window.location = "partials/index_.html";
 	};
 	if (window.client.mobile) {
 		document.addEventListener("deviceready", RunApp, false);

@@ -7,7 +7,7 @@
     <author email="tlantic@tlantic.com.br" href="http://www.tlantic.com.br">
         Tlantic RTDM Team
     </author>
-    <content src="partials/index_.html" />
+    <content src="index.html" />
     <access origin="*" />
 
 	<!-- Android -->
@@ -19,5 +19,4 @@
         <icon src="config/res/drawable-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
     </platform>
 	<preference name="KeepRunning" value="true"/>
-	<preference name="SplashScreenDelay" value="3000"/>
 </widget>
