@@ -18,24 +18,25 @@ rtdmmaServices.factory('User', function($resource) {
         updateTask: function (taskId, data) {
             $http.post('http://tlanrtdm.herokuapp.com/tasks/' + taskId, data).
             success(function(data, status, headers, config) {
-                console.log('SaveSuccess');
-                console.log(data);
-                console.log(status);
-                console.log(headers);
-                console.log(config);
+                console.info('SaveSuccess @ rtdmmaServices TaskPost updateTask');
+                console.debug("data " + angular.toJson(data, true));
+                console.debug("status " + angular.toJson(status, true));
+                console.debug("headers " + angular.toJson(headers, true));
+                console.debug("config " + angular.toJson(config, true));
             }).
             error(function(data, status, headers, config) {
-                console.log('SaveError');
-                console.log(data);
-                console.log(status);
-                console.log(headers);
-                console.log(config);
+                console.error('SaveError @ rtdmmaServices TaskPost updateTask');
+                console.debug("data " + angular.toJson(data, true));
+                console.debug("status " + angular.toJson(status, true));
+                console.debug("headers " + angular.toJson(headers, true));
+                console.debug("config " + angular.toJson(config, true));
             });
-        }   
+        }
     }
 }])
 .factory('Tasks', ['$resource', function($resource) {
     return $resource ('http://tlanrtdm.herokuapp.com/tasks/:id', {},{
-        get:{method: 'GET'}});
+        get:{method: 'GET'}
+    });
 }]);
    
