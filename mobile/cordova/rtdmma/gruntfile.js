@@ -65,7 +65,7 @@ module.exports = function (grunt) {
                     failOnError: true,
                     async:false
                 },
-                command: "adb.exe logcat -s -d Cordova CordovaActivity CordovaWebViewClient CordovaLog LocationManagerService GpsLocationProvider"
+                command: "adb.exe logcat -s -d CordovaLog LocationManagerService GpsLocationProvider"
             },
             logcat_tail: {
                 options: {
@@ -74,9 +74,9 @@ module.exports = function (grunt) {
                     failOnError: true,
                     async:false
                 },
-                command: "adb.exe logcat -s Cordova CordovaActivity CordovaWebViewClient CordovaLog LocationManagerService GpsLocationProvider"
+                command: "adb.exe logcat -s CordovaLog LocationManagerService GpsLocationProvider"
             },
-            /*** project dependencies ***/            
+            /*** project dependencies ***/
             dependencies: {
                 options: {
                     stdout: true,
