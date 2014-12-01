@@ -87,6 +87,16 @@ exports.update = function (req, res) {
     });
 };
 
+exports.reset = function (req, res) {
+    var task = req.loadedTask;
+    task.startedAt = null;
+    task.finishedAt = null;
+    task.failureReason = "Entrega cancelada";
+    task.save(function (err) {
+        res.json( mBuilder.buildQuickResponse(err, 'Unexpected error updating task.', task) );
+    });
+};
+
 exports.listAll = function (req, res) {
     Task.find({}, function(err, tasks) {
         return res.json( mBuilder.buildQuickResponse(err, 'Error listing tasks!', tasks) );
