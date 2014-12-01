@@ -23,3 +23,5 @@ mobile/cordova/rtdmma/src/lib/angular-bindonce/
 mobile/cordova/rtdmma/src/lib/angular-cookies/
 mobile/cordova/rtdmma/platforms/android/CordovaLib/
 mobile/cordova/rtdmma/platforms/android/res/
+mobile/cordova/rtdmma/src/lib/moment/
+mobile/cordova/rtdmma/src/lib/angular-moment/
