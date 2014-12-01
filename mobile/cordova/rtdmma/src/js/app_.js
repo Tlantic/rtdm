@@ -4,9 +4,11 @@ var rtdmma = angular.module('rtdmma', [
 		"ngRoute",
 		"ngResource",
 		"ngTouch",
+		// "ngAnimate",
 		"rtdmmaFilters",
 		"rtdmmaServices",
 		"rtdmmaControllers",
+		"angularMoment",
 		"angular-loading-bar",
 		"mobile-angular-ui"
 	]);
